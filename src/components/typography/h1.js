@@ -29,6 +29,5 @@ const H1 = styled.h1`
     @media (min-width: 800px) {
         font-size: 50px;
     }
-    }
 `
 export default h1;

@@ -8,6 +8,7 @@ import AboutBook from "../components/about-book"
 import PreOrder from "../components/pre-order-section"
 import AboutSarah from "../components/about-sarah"
 import Brands from "../components/brands"
+import Gallery from "../components/image-gallery"
 
 import styled from "styled-components";
 
@@ -24,6 +25,7 @@ const IndexPage = () => (
       <AboutBook/>
       <AboutSarah/>
       <Brands/>
+      <Gallery/>
     </Main>
 
 )
