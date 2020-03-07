@@ -8,14 +8,17 @@ import AboutBook from "../components/about-book"
 import styled from "styled-components";
 
 import SEO from "../components/seo"
+import 'normalize.css'
 
 const IndexPage = () => (
-  <Main>
-    <SEO title="Home" />
-    <Press/>
-    <Hero/>
-    <AboutBook/>
-  </Main>
+
+    <Main>
+      <SEO title="Home" />
+      <Press/>
+      <Hero/>
+      <AboutBook/>
+    </Main>
+
 )
 
 const Main = styled.main`
