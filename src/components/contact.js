@@ -24,6 +24,7 @@ const Border = styled.div`
     border: 2px #0F5800 solid;
     margin: 0 auto;
     max-width: 700px;
+    margin-bottom: 5em;
 `
 const Content = styled.div`
     
