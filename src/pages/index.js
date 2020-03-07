@@ -5,6 +5,8 @@ import { Link } from "gatsby"
 import Press from "../components/press"
 import Hero from "../components/hero"
 import AboutBook from "../components/about-book"
+import PreOrder from "../components/pre-order-section"
+
 import styled from "styled-components";
 
 import SEO from "../components/seo"
@@ -16,6 +18,7 @@ const IndexPage = () => (
       <SEO title="Home" />
       <Press/>
       <Hero/>
+      <PreOrder />
       <AboutBook/>
     </Main>
 
