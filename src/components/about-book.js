@@ -5,10 +5,32 @@ import H2 from "../components/typography/h2"
 import H3 from "../components/typography/h3"
 import P from "../components/typography/p"
 import Container from "../components/container"
+import { StaticQuery, graphql } from 'gatsby'
+import Img from "gatsby-image/withIEPolyfill"
 
-const Hero = ({  }) => {
-    return (
+
+export default () => (
+    <StaticQuery
+      query={graphql`
+        query {
+            vines: file(relativePath: { eq: "vines.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1000) {
+                    ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+      `}
+      render={data => (
         <section>
+             <Img
+                fluid={data.vines.childImageSharp.fluid}
+                objectFit='cover'
+                objectPosition='50% 50%'
+                alt='Sarahs Homegrown Watermelon Vines'
+                style={{ width: "100%" }}
+            />
             <Container>
                 <Content>
                     <H3 textAlign="center">ABOUT THE BOOK</H3>
@@ -19,11 +41,14 @@ const Hero = ({  }) => {
                 </Content>
             </Container>
         </section>
-    );
-};
+      )}
+    />
+  )
 
-const Content = styled.div`
-    margin: 2em 0;
+
+  const Content = styled.div`
+    margin: 1em 0;
+    @media (min-width: 800px) {
+        margin: -2em 0; 
+    }
 `
-
-export default Hero;

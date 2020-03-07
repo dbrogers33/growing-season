@@ -28,6 +28,6 @@ const H3 = styled.h3`
     @media (min-width: 800px) {
         font-size: 18px;
     }
-    }
 `
+
 export default h3;

@@ -27,7 +27,7 @@ const H1 = styled.h1`
     margin: .1em 0;
     font-display: auto;
     @media (min-width: 800px) {
-        font-size: 56px;
+        font-size: 50px;
     }
     }
 `
