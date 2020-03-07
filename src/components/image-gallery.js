@@ -4,8 +4,6 @@ import styled from "styled-components";
 import H2 from "../components/typography/h2"
 import H3 from "../components/typography/h3"
 import Container from "../components/container"
-import { StaticQuery, graphql } from 'gatsby'
-import Img from "gatsby-image/withIEPolyfill"
 import photos from "../static/images.json"
 import Gallery from "react-photo-gallery"
 

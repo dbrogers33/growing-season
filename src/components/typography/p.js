@@ -27,6 +27,5 @@ const P = styled.p`
     @media (min-width: 800px) {
         font-size: 22px;
     }
-    }
 `
 export default paragraph;
