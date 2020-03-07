@@ -8,7 +8,7 @@ const Quote = ({  }) => {
 
             <Wrap>
                 <P>“A supremely practical and useful book. Sarah Frey distills the most fundamental information about habit formation, so you can accomplish more by focusing on less.”</P>
-                <Author>— Denham Rogers</Author>
+                <Author>— Denham testing</Author>
                 <Credentials>Television Host and New York Times Best Seller </Credentials>
             </Wrap>
         
