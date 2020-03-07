@@ -7,6 +7,21 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-styled-components`,
+        options: {
+          // Add any options here
+        },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+          options: {
+            custom: {
+              families: ["Brandon Grotesque, Cervo Neue"],
+              urls: ["/fonts/fonts.css"],
+            },
+          },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
