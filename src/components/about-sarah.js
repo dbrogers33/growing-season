@@ -20,6 +20,7 @@ export default () => (
                     }
                 }
             }
+            
         }
       `}
       render={data => (
@@ -54,7 +55,7 @@ export default () => (
 
 const Content = styled.div`
     background: #F7FCF9;
-    margin: 8em 0;
+    margin: 8em 0 4em  0;
     @media (min-width: 800px) {
         display: flex;
         align-items: stretch;

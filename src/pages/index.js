@@ -7,6 +7,7 @@ import Hero from "../components/hero"
 import AboutBook from "../components/about-book"
 import PreOrder from "../components/pre-order-section"
 import AboutSarah from "../components/about-sarah"
+import Brands from "../components/brands"
 
 import styled from "styled-components";
 
@@ -22,6 +23,7 @@ const IndexPage = () => (
       <PreOrder />
       <AboutBook/>
       <AboutSarah/>
+      <Brands/>
     </Main>
 
 )
