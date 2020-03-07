@@ -5,6 +5,13 @@ import { Link } from "gatsby"
 import Press from "../components/press"
 import Hero from "../components/hero"
 import AboutBook from "../components/about-book"
+import PreOrder from "../components/pre-order-section"
+import AboutSarah from "../components/about-sarah"
+import Brands from "../components/brands"
+import Gallery from "../components/image-gallery"
+import Contact from "../components/contact"
+import Footer from "../components/footer"
+
 import styled from "styled-components";
 
 import SEO from "../components/seo"
@@ -16,7 +23,13 @@ const IndexPage = () => (
       <SEO title="Home" />
       <Press/>
       <Hero/>
+      <PreOrder />
       <AboutBook/>
+      <AboutSarah/>
+      <Brands/>
+      <Gallery/>
+      <Contact/>
+      <Footer/>
     </Main>
 
 )

@@ -25,10 +25,8 @@ const H1 = styled.h1`
     font-size: 24px;
     text-align: ${props => props.textAlign};
     margin: .1em 0;
-    font-display: auto;
     @media (min-width: 800px) {
-        font-size: 56px;
-    }
+        font-size: 50px;
     }
 `
 export default h1;

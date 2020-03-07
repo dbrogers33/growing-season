@@ -31,7 +31,7 @@ export default () => (
                     style={{ height: "100%" }}
                 />
             </Container>
-    </section>
+          </section>
       )}
     />
   )

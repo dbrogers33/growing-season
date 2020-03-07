@@ -16,7 +16,6 @@ const Quote = ({  }) => {
 };
 
 const Wrap = styled.div`
-    width: 100%;
     padding: 1em;
     background: #F7FCF9;
 `
