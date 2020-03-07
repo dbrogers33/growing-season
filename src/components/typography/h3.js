@@ -25,6 +25,7 @@ const H3 = styled.h3`
     text-align: ${props => props.textAlign};
     margin: .1em 0;
     font-display: auto;
+    margin: 0 0 .5em 0;
     @media (min-width: 800px) {
         font-size: 18px;
     }
