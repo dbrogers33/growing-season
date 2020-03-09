@@ -49,22 +49,26 @@ export default () => (
             <Flexbox>
                 
                 <Flexitem>
-                    <Img
-                        fluid={data.barnesNoble.childImageSharp.fluid}
-                        objectFit='cover'
-                        objectPosition='50% 50%'
-                        alt='Pre order The Growing Season at Barnes and Noble'
-                        style={{ width: "100%" }}
-                    />
+                    <a href="https://www.barnesandnoble.com/w/the-growing-season-sarah-frey/1133865222" target="_blank">
+                        <Img
+                            fluid={data.barnesNoble.childImageSharp.fluid}
+                            objectFit='cover'
+                            objectPosition='50% 50%'
+                            alt='Pre order The Growing Season at Barnes and Noble'
+                            style={{ width: "100%" }}
+                        />
+                    </a>
                 </Flexitem>
                 <Flexitem>
-                    <Img
-                        fluid={data.amazon.childImageSharp.fluid}
-                        objectFit='cover'
-                        objectPosition='50% 50%'
-                        alt='Pre order The Growing Season at Amazon'
-                        style={{ width: "100%" }}
-                    />
+                    <a href="https://www.amazon.com/Growing-Season-Saved-American-Farm/dp/0593129393" target="_blank">
+                        <Img
+                            fluid={data.amazon.childImageSharp.fluid}
+                            objectFit='cover'
+                            objectPosition='50% 50%'
+                            alt='Pre order The Growing Season at Amazon'
+                            style={{ width: "100%" }}
+                        />
+                    </a>
                 </Flexitem>
                 <Flexitem>
                     <Img
@@ -76,13 +80,15 @@ export default () => (
                     />
                 </Flexitem>
                 <Flexitem>
-                    <Img
-                        fluid={data.randomHouse.childImageSharp.fluid}
-                        objectFit='cover'
-                        objectPosition='50% 50%'
-                        alt='Pre order The Growing Season at Random House'
-                        style={{ width: "100%" }}
-                    />
+                    <a href="https://www.penguinrandomhouse.com/books/610559/the-growing-season-by-sarah-frey/" target="_blank">
+                        <Img
+                            fluid={data.randomHouse.childImageSharp.fluid}
+                            objectFit='cover'
+                            objectPosition='50% 50%'
+                            alt='Pre order The Growing Season at Random House'
+                            style={{ width: "100%" }}
+                        />
+                    </a>
                 </Flexitem>
             </Flexbox>
 
@@ -101,15 +107,13 @@ const Wrap = styled.section`
     padding: 3em 0;
     background: #F7FCF9;
 `
-const Flexbox = styled.section`
+const Flexbox = styled.div`
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     padding: 1em 0;
 `
 
-const Flexitem = styled.section`
-    display: flex;
+const Flexitem = styled.div`
     justify-content: space-around;
     width: calc(50% - 2em);
     padding: 1em;
