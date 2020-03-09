@@ -16,6 +16,7 @@ import styled from "styled-components";
 
 import SEO from "../components/seo"
 import 'normalize.css'
+import './fonts.css'
 
 const IndexPage = () => (
 
