@@ -120,5 +120,9 @@ const Flexitem = styled.div`
     @media (min-width: 800px) {
         width: calc(25% - 4em);
         padding: 2em;
+        /* transition: ease .2s;
+        &:hover{
+            width: 20%;
+        } */
     }
 `
