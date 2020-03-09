@@ -24,6 +24,4 @@ const Copyright = styled.p`
     line-height: 1.5em;
 `
 
-
-
 export default Contact;

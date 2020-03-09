@@ -22,9 +22,9 @@ export default () => (
             }
             watermelons: file(relativePath: { eq: "watermelons.png" }) {
                 childImageSharp {
-                    fluid {
-                        ...GatsbyImageSharpFluid_withWebp
-                    }
+                    fluid(maxWidth: 1600) {
+                        ...GatsbyImageSharpFluid
+                        }
                 }
             }
         }
