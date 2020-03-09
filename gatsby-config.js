@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `The Growing Season by Sarah Frey`,
+    description: `The Growing Season tells of Sarah’s entrepreneurial spirit that was nurtured at the young age of eight, while accompanying her
+    mother on a summer produce route selling farm-fresh produce to grocery retailers in southern
+    Illinois.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

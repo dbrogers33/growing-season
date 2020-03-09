@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Brandon Grotesque";
-    src: url("/BrandonGrotesque-Bold.otf") format('opentype');
+    src: url("/fonts/BrandonGrotesque-Bold.otf") format('opentype');
   }
 
   @font-face {
     font-family: "Cervo Neue";
-    src: url("/CervoNeue-BoldNeue.otf") format('opentype');
+    src: url("/fonts/CervoNeue-BoldNeue.otf") format('opentype');
   }
