@@ -6,6 +6,6 @@
 
   @font-face {
     font-family: "Cervo Neue";
-    src: url("/fonts/CervoNeue-BoldNeue.woof2") format('woff2'),
-        url("/fonts/CervoNeue-BoldNeue.woof") format('woff');
+    src: url("/fonts/CervoNeue-BoldNeue.woff2") format('woff2'),
+        url("/fonts/CervoNeue-BoldNeue.woff") format('woff');
   }
