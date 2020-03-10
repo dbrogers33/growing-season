@@ -71,7 +71,9 @@ function SEO({ description, lang, meta, title }) {
           property: 'og:image', content: '/og-image.png'
         }
       ].concat(meta)}
+
     />
+      
   )
 }
 
