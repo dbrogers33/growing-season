@@ -42,7 +42,7 @@ export default () => (
         }
       `}
       render={data => (
-        <Wrap>
+        <Wrap id="prepurhcase">
         <Container>
             <H2 textAlign="center">PRE-ORDER YOUR COPY AT...</H2>
             
@@ -108,21 +108,18 @@ const Wrap = styled.section`
     background: #F7FCF9;
 `
 const Flexbox = styled.div`
-    display: flex;
-    align-items: center;
     padding: 1em 0;
 `
 
 const Flexitem = styled.div`
-    justify-content: space-around;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    bottom: 0;
     width: calc(50% - 2em);
     padding: 1em;
     @media (min-width: 800px) {
         width: calc(25% - 4em);
         padding: 2em;
-        /* transition: ease .2s;
-        &:hover{
-            width: 20%;
-        } */
     }
 `
