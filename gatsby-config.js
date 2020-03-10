@@ -4,7 +4,7 @@ module.exports = {
     description: `The Growing Season tells of Sarah’s entrepreneurial spirit that was nurtured at the young age of eight, while accompanying her
     mother on a summer produce route selling farm-fresh produce to grocery retailers in southern
     Illinois.`,
-    author: `Denham Rogers`
+    author: `Sarah Frey`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -67,6 +67,9 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          property: 'og:image', content: '/og-image.png'
+        }
       ].concat(meta)}
     />
   )
