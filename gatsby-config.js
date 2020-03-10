@@ -14,15 +14,15 @@ module.exports = {
           // Add any options here
         },
     },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-          options: {
-            custom: {
-              families: ["Brandon Grotesque, Cervo Neue"],
-              urls: ["/fonts/fonts.css"],
-            },
-          },
-    },
+    // {
+    //   resolve: "gatsby-plugin-web-font-loader",
+    //       options: {
+    //         custom: {
+    //           families: ["Brandon Grotesque, Cervo Neue"],
+    //           urls: ["/fonts/fonts.css"],
+    //         },
+    //       },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
