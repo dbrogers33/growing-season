@@ -12,7 +12,7 @@ export default () => (
         query {
             file(relativePath: { eq: "press-logos.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 800) {
+                    fluid(maxWidth: 1600) {
                     ...GatsbyImageSharpFluid
                     }
                 }

@@ -43,31 +43,37 @@ export default () => (
                 <H2 textAlign="center">Sarah's Brands</H2>
                 <Flexbox>
                 <Flexitem>
-                    <Img
-                        fluid={data.sarahshomegrown.childImageSharp.fluid}
-                        objectFit='cover'
-                        objectPosition='50% 50%'
-                        alt='Sarahs Homegrown Watermelon Vines'
-                        style={{ width: "100%" }}
-                    />
+                    <a href="https://freyfarms.com/" target="_blank">
+                        <Img
+                            fluid={data.sarahshomegrown.childImageSharp.fluid}
+                            objectFit='cover'
+                            objectPosition='50% 50%'
+                            alt='Sarahs Homegrown Watermelon Vines'
+                            style={{ width: "100%" }}
+                        />
+                    </a>
                 </Flexitem>
                 <Flexitem>
-                    <Img
-                        fluid={data.tsamma.childImageSharp.fluid}
-                        objectFit='cover'
-                        objectPosition='50% 50%'
-                        alt='Sarahs Homegrown Watermelon Vines'
-                        style={{ width: "100%" }}
-                    />
+                    <a href="https://tsammajuice.com/" target="_blank">
+                        <Img
+                            fluid={data.tsamma.childImageSharp.fluid}
+                            objectFit='cover'
+                            objectPosition='50% 50%'
+                            alt='Sarahs Homegrown Watermelon Vines'
+                            style={{ width: "100%" }}
+                        />
+                    </a>
                 </Flexitem>
                 <Flexitem>
-                    <Img
-                        fluid={data.freyfarms.childImageSharp.fluid}
-                        objectFit='cover'
-                        objectPosition='50% 50%'
-                        alt='Sarahs Homegrown Watermelon Vines'
-                        style={{ width: "100%" }}
-                    />
+                    <a href="https://freyfarms.com/" target="_blank">
+                        <Img
+                            fluid={data.freyfarms.childImageSharp.fluid}
+                            objectFit='cover'
+                            objectPosition='50% 50%'
+                            alt='Sarahs Homegrown Watermelon Vines'
+                            style={{ width: "100%" }}
+                        />
+                    </a>
                 </Flexitem>
                 </Flexbox>
             </Container>

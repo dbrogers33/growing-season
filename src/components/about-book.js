@@ -15,7 +15,7 @@ export default () => (
         query {
             vines: file(relativePath: { eq: "vines.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000) {
+                    fluid(maxWidth: 1600) {
                     ...GatsbyImageSharpFluid
                     }
                 }

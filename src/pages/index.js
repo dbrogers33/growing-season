@@ -16,11 +16,13 @@ import styled from "styled-components";
 
 import SEO from "../components/seo"
 import 'normalize.css'
+import GlobalStyle from '../components/global-styles'
 
 const IndexPage = () => (
 
     <Main>
       <SEO title="Home" />
+      <GlobalStyle />
       <Press/>
       <Hero/>
       <PreOrder />

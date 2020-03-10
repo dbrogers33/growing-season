@@ -4,7 +4,7 @@ import styled from "styled-components";
 import H2 from "../components/typography/h2"
 import H3 from "../components/typography/h3"
 import Container from "../components/container"
-import photos from "../static/images.json"
+import photos from "../../static/images.json"
 import Gallery from "react-photo-gallery"
 
 const ImageGallery = ({  }) => {
