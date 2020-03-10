@@ -41,7 +41,7 @@ export default () => (
                         <Copy>
                             <H3>ABOUT THE AUTHOR</H3>
                             <H2>Meet Sarah</H2>
-                            <P>Sarah Frey is the founder of Frey Farms, a produce provider with operations in seven states. The fast-growing company supplies fresh produce to major retailers nationwide, and has undertaken a mission to eliminate food waste by using unused fruit to create a line of healthy fruit juices and produce marketed under the company’s Sarah’s Homegrown brand. Frey’s ability to negotiate has been featured in a Harvard Business School case study. Frey Farms is based in Orchardville, Ill., the town where Frey grew up and launched her business.</P>
+                            <P>Sarah Frey is the Founding Farmer of Frey Farms, a major produce and beverage provider with operations in seven states. The fast-growing company supplies fresh produce and beverages to retailers nationwide, and has undertaken a mission to eliminate food waste by using unused fruit to create a line of healthy fruit juices and produce marketed under the company’s Sarah’s Homegrown brand. Frey’s ability to negotiate has been featured in a Harvard Business School case study. Frey Farms is based in Orchardville, Ill., the town where Frey grew up and launched her business.</P>
                         </Copy>
                     </Flexitem>
 
