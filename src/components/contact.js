@@ -27,7 +27,7 @@ export default () => (
                 <Content>
                     <H3 textAlign="center">Press and Media</H3>
                     <Text textAlign="center">To schedule an interview with Sarah Frey please contact:</Text>
-                    <Text textAlign="center"><strong>Sarah Breivogel</strong></Text>
+                    <Name textAlign="center">Sarah Breivogel</Name>
                     <Text textAlign="center">(212) 572-2722</Text>
                     <Text textAlign="center"><a href="mailto:sbreivogel@peguinrandhouse.com">sbreivogel@peguinrandhouse.com</a></Text>
                 </Content>
@@ -35,7 +35,7 @@ export default () => (
                 <Img
                     fixed={data.vine.childImageSharp.fixed}
                     alt='The Growing Season by Sarah Frey'
-                    style={{ position: "absolute", bottom: "0", right: "0", height: "40%", width: "15%"}}
+                    style={{ position: "absolute", right: "0", bottom: "0" }}
                 />
                
             </Border>
@@ -53,13 +53,25 @@ const Border = styled.div`
 `
 
 const Content = styled.div`
-    padding: 2em 2em;
+    padding: 3em 2em 7em 2em;
     @media (min-width: 500px) {
         padding: 3em 6em;
     }
 `
 const Text = styled.div`
     font-family: 'Brandon Grotesque Regular';
+    color: #000;
+    font-size: 18px;
+    text-align: ${props => props.textAlign};
+    font-display: auto;
+    line-height: 1.5em;
+    @media (min-width: 800px) {
+        font-size: 22px;
+    }
+`
+
+const Name = styled.div`
+    font-family: 'Brandon Grotesque Bold';
     color: #000;
     font-size: 18px;
     text-align: ${props => props.textAlign};
