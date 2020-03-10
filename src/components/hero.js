@@ -34,13 +34,15 @@ export default () => (
             <Wrap>
                 <Flexbox>
                     <FlexitemOne>
-                        <Img
-                            fluid={data.book.childImageSharp.fluid}
-                            objectFit='cover'
-                            objectPosition='50% 50%'
-                            alt='The Growing Season by Sarah Frey'
-                            style={{ height: "100%", margin: "1.75em 0" }}
-                        />
+                        <a href="#prepurhcase">
+                            <Img
+                                fluid={data.book.childImageSharp.fluid}
+                                objectFit='cover'
+                                objectPosition='50% 50%'
+                                alt='The Growing Season by Sarah Frey'
+                                style={{ height: "100%", margin: "1.75em 0" }}
+                            />
+                        </a>
                     </FlexitemOne>
                     <FlexitemTwo>
                         <H1>The Growing Season</H1>
