@@ -23,11 +23,11 @@ const Author = styled.p`
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
-    font-family: 'Brandon Grotesque';
+    font-family: 'Brandon Grotesque Bold';
 `
 const Credentials = styled.p`
     font-size: 14px;
-    font-family: 'Brandon Grotesque';
+    font-family: 'Brandon Grotesque Regular';
 `
 
 
