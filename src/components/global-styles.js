@@ -4,8 +4,8 @@ const globalStyles = createGlobalStyle`
 
   @font-face {
     font-family: "Brandon Grotesque";
-    src: url("../../static/BrandonGrotesque-Bold.woff2") format("woff2"),
-    url("../../static/BrandonGrotesque-Bold.woff") format("woff");
+    src: url("/fonts/BrandonGrotesque-Bold.woff2") format("woff2"),
+    url("/fonts/BrandonGrotesque-Bold.woff") format("woff");
   }
 
   @font-face {
