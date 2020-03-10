@@ -22,7 +22,7 @@ const IndexPage = () => (
 
     <Main>
       <SEO title="Home" />
-      <GlobalStyles />
+      <GlobalStyle />
       <Press/>
       <Hero/>
       <PreOrder />
