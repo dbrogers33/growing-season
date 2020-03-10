@@ -19,7 +19,7 @@ h2.defaultProps = {
 
 const H2 = styled.h2`
     text-transform: uppercase;
-    font-family: 'Brandon Grotesque';
+    font-family: 'Brandon Grotesque Bold';
     color: #000;
     font-weight: 800;
     font-size: 24px;

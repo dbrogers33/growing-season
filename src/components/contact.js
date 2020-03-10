@@ -35,7 +35,7 @@ const Content = styled.div`
 `
 
 const Text = styled.div`
-font-family: 'Brandon Grotesque';
+font-family: 'Brandon Grotesque Regular';
     color: #000;
     font-size: 18px;
     text-align: ${props => props.textAlign};
