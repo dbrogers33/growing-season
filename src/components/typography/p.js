@@ -18,7 +18,7 @@ paragraph.defaultProps = {
 };
 
 const P = styled.p`
-    font-family: 'Brandon Grotesque';
+    font-family: 'Brandon Grotesque Regular';
     color: #545454;
     font-size: 18px;
     text-align: ${props => props.textAlign};
