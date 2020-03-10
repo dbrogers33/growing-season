@@ -7,7 +7,7 @@ import Container from "../components/container"
 import photos from "../../static/images.json"
 import Gallery from "react-photo-gallery"
 
-const ImageGallery = ({  }) => {
+const ImageGallery = () => {
     return (
         <section>
             <Container>

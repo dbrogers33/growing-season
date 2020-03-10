@@ -49,7 +49,7 @@ export default () => (
             <Flexbox>
                 
                 <Flexitem>
-                    <a href="https://www.barnesandnoble.com/w/the-growing-season-sarah-frey/1133865222" target="_blank">
+                    <a href="https://www.barnesandnoble.com/w/the-growing-season-sarah-frey/1133865222" target="_blank" rel="noopener noreferrer">
                         <Img
                             fluid={data.barnesNoble.childImageSharp.fluid}
                             objectFit='cover'
@@ -60,7 +60,7 @@ export default () => (
                     </a>
                 </Flexitem>
                 <Flexitem>
-                    <a href="https://www.amazon.com/Growing-Season-Saved-American-Farm/dp/0593129393" target="_blank">
+                    <a href="https://www.amazon.com/Growing-Season-Saved-American-Farm/dp/0593129393" target="_blank" rel="noopener noreferrer">
                         <Img
                             fluid={data.amazon.childImageSharp.fluid}
                             objectFit='cover'
@@ -80,7 +80,7 @@ export default () => (
                     />
                 </Flexitem>
                 <Flexitem>
-                    <a href="https://www.penguinrandomhouse.com/books/610559/the-growing-season-by-sarah-frey/" target="_blank">
+                    <a href="https://www.penguinrandomhouse.com/books/610559/the-growing-season-by-sarah-frey/" target="_blank" rel="noopener noreferrer">
                         <Img
                             fluid={data.randomHouse.childImageSharp.fluid}
                             objectFit='cover'

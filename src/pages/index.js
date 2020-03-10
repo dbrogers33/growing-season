@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 // Stuff that Denham has added
 import Press from "../components/press"

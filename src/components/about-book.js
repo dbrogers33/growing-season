@@ -35,9 +35,18 @@ export default () => (
                 <Content>
                     <H3 textAlign="center">ABOUT THE BOOK</H3>
                     <H2 textAlign="center">HOW SARAH SAVED AN AMERICAN FARM</H2>
-                    <P textAlign="center">The youngest of her parents’ twenty-one children, Sarah Frey grew up on a struggling farm in Southern Illinois, often having to grow, catch, or hunt her own dinner alongside her brothers. She spent much of her early childhood dreaming of running away to the big city or really anywhere with central heat. At fifteen, she moved out of her family home and started her own fresh produce delivery business with nothing more than an old pickup truck. Two years later, when the family farm faced inevitable foreclosure, Sarah gave up her dreams of escape, took over the farm and started her own produce company. Refusing to play by the traditional rules, Sarah talked her way into suit-filled boardrooms at seventeen, made deals with the nation’s largest retailers, and fostered legendary negotiations that led Harvard Business School to publish their most popular case study. Filled with grit and grace, The Growing Season: How I Saved an American Farm — and Built a New Life tells the inspiring story of how a scrappy rural childhood game Sarah the resiliency to take risks that paid off in unexpected ways.</P>
-                    <P textAlign="center">Twenty-seven years and running, Sarah’s family-operated company, Frey Farms, has sold more than a billion dollars’ worth of fresh produce and beverages, and has become one of America’s largest fresh produce growers and suppliers, with farmland across seven states. Through innovation and sustainable farming practices, the company is committed to helping climate food waste and giving back to the land. Thanks to the millions of melons and pumpkins she sells annually, Sarah has been dubbed “America’s Pumpkin Queen” by the national press.</P>
-                    <P textAlign="center">Rather than leaving her community, Sarah found adventure and opportunity in one of the most forgotten parts of our country. With fearlessness and creativity, she literally dug her destiny out of the dirt.</P>
+                    <P textAlign="center">The youngest of 21 children, Sarah Frey grew up poor on a struggling farm in Southern Illinois. At 15, she started her own fresh produce delivery business out of an old pickup truck, and because of her tenacity was able two years later to buy her family’s farm which faced foreclosure.</P>
+
+                    <P textAlign="center">
+                    Frey’s story is one of never taking no for an answer, negotiating with some of the biggest businesses in the nation and building a company and an expanding brand which serves consumers with fresh, healthy products.
+                    </P>
+
+                    <P textAlign="center">
+                    Frey Farms sells more pumpkins than any other producer in the nation, earning Frey the nickname “America’s Pumpkin Queen.” 
+                    </P>
+
+                    <P textAlign="center">
+                    Filled with grit and grace, The Growing Season: How I Saved an American Farm -- and Built a New Life, tells the honest and inspiring story of how a scrappy upbringing gave Frey the resilience and work ethic to take risks and thrive, while at the same time maintaining the close ties to the community -- and the farm -- where she grew up. </P>
                 </Content>
             </Container>
         </section>
