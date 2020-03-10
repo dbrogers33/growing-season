@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 
-const Contact = ({  }) => {
+const Contact = () => {
     return (
         <Footer>
             <Copyright>Copyright {(new Date().getFullYear())} Frey Farms, LLC</Copyright>
@@ -16,7 +16,7 @@ const Footer = styled.footer`
 const Copyright = styled.p`
     padding: 1em 0;
     margin: 0;
-    font-family: 'Brandon Grotesque';
+    font-family: 'Brandon Grotesque Regular';
     color: #fff;
     font-size: 18px;
     text-align: center;

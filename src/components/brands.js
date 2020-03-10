@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import H2 from "../components/typography/h2"
 import H3 from "../components/typography/h3"
-import P from "../components/typography/p"
 import Container from "../components/container"
 import { StaticQuery, graphql } from 'gatsby'
 import Img from "gatsby-image/withIEPolyfill"
@@ -43,7 +42,7 @@ export default () => (
                 <H2 textAlign="center">Sarah's Brands</H2>
                 <Flexbox>
                 <Flexitem>
-                    <a href="https://freyfarms.com/" target="_blank">
+                    <a href="https://freyfarms.com/" target="_blank" rel="noopener noreferrer">
                         <Img
                             fluid={data.sarahshomegrown.childImageSharp.fluid}
                             objectFit='cover'
@@ -54,7 +53,7 @@ export default () => (
                     </a>
                 </Flexitem>
                 <Flexitem>
-                    <a href="https://tsammajuice.com/" target="_blank">
+                    <a href="https://tsammajuice.com/" target="_blank" rel="noopener noreferrer">
                         <Img
                             fluid={data.tsamma.childImageSharp.fluid}
                             objectFit='cover'
@@ -65,7 +64,7 @@ export default () => (
                     </a>
                 </Flexitem>
                 <Flexitem>
-                    <a href="https://freyfarms.com/" target="_blank">
+                    <a href="https://freyfarms.com/" target="_blank" rel="noopener noreferrer">
                         <Img
                             fluid={data.freyfarms.childImageSharp.fluid}
                             objectFit='cover'

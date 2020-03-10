@@ -3,7 +3,7 @@ import styled from "styled-components";
 import P from "../components/typography/p"
 
 
-const Quote = ({  }) => {
+const Quote = () => {
     return (
 
             <Wrap>
