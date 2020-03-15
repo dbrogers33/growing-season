@@ -7,6 +7,7 @@ import PreOrder from "../components/pre-order-section"
 import AboutSarah from "../components/about-sarah"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
+import Reviews from "../components/reviews"
 
 import styled from "styled-components";
 
@@ -22,6 +23,7 @@ const IndexPage = () => (
       <Hero/>
       <PreOrder/>
       <AboutSarah/>
+      <Reviews />
       <Press/>
       <Contact/>
       <Footer/>
