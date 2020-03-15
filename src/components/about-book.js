@@ -24,28 +24,21 @@ export default () => (
       `}
       render={data => (
         <section>
-             <Img
-                fluid={data.vines.childImageSharp.fluid}
-                objectFit='cover'
-                objectPosition='50% 50%'
-                alt='Sarahs Homegrown Watermelon Vines'
-                style={{ width: "100%" }}
-            />
             <Container>
                 <Content>
-                    <H3 textAlign="center">ABOUT THE BOOK</H3>
-                    <H2 textAlign="center">HOW SARAH SAVED AN AMERICAN FARM</H2>
-                    <P textAlign="center">The youngest of 21 children, Sarah Frey grew up poor on a struggling farm in Southern Illinois. At 15, she started her own fresh produce delivery business out of an old pickup truck, and because of her tenacity was able two years later to buy her family’s farm which faced foreclosure.</P>
+                    <H3>ABOUT THE BOOK</H3>
+                    <H2>HOW SARAH SAVED AN AMERICAN FARM</H2>
+                    <P>The youngest of 21 children, Sarah Frey grew up poor on a struggling farm in Southern Illinois. At 15, she started her own fresh produce delivery business out of an old pickup truck, and because of her tenacity was able two years later to buy her family’s farm which faced foreclosure.</P>
 
-                    <P textAlign="center">
+                    <P>
                     Frey’s story is one of never taking no for an answer, negotiating with some of the biggest businesses in the nation and building a company and an expanding brand which serves consumers with fresh, healthy products.
                     </P>
 
-                    <P textAlign="center">
+                    <P>
                     Frey Farms sells more pumpkins than any other producer in the nation, earning Frey the nickname “America’s Pumpkin Queen.” 
                     </P>
 
-                    <P textAlign="center">
+                    <P>
                     Filled with grit and grace, The Growing Season: How I Saved an American Farm -- and Built a New Life, tells the honest and inspiring story of how a scrappy upbringing gave Frey the resilience and work ethic to take risks and thrive, while at the same time maintaining the close ties to the community -- and the farm -- where she grew up. </P>
                 </Content>
             </Container>

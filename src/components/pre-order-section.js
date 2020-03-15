@@ -104,11 +104,11 @@ export default () => (
   )
 
 const Wrap = styled.section`
-    padding: 3em 0;
+    padding: 2em 0;
     background: #F7FCF9;
 `
 const Flexbox = styled.div`
-    padding: 1em 0;
+    padding: 0em 0;
 `
 
 const Flexitem = styled.div`
@@ -120,6 +120,6 @@ const Flexitem = styled.div`
     padding: 1em;
     @media (min-width: 800px) {
         width: calc(25% - 4em);
-        padding: 2em;
+        padding: 1em 2em;
     }
 `

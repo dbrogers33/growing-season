@@ -1,42 +1,29 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react'
+import styled from "styled-components";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = () => {
+    return (
+        <Footer>
+            <Copyright>The Growing Season</Copyright>
+        </Footer>
+    );
+};
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const Footer = styled.footer`
+    background-color: #0F5800;
+    margin: 0 auto;
+`
+const Copyright = styled.p`
+    padding: 0.35em 0;
+    margin: 0;
+    font-family: 'Brandon Grotesque Bold';
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    font-display: auto;
+    line-height: 1.5em;
+    letter-spacing: .09em;
+`
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;

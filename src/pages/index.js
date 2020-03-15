@@ -3,11 +3,8 @@ import React from "react"
 // Stuff that Denham has added
 import Press from "../components/press"
 import Hero from "../components/hero"
-import AboutBook from "../components/about-book"
 import PreOrder from "../components/pre-order-section"
 import AboutSarah from "../components/about-sarah"
-import Brands from "../components/brands"
-import Gallery from "../components/image-gallery"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
 
@@ -22,13 +19,10 @@ const IndexPage = () => (
     <Main>
       <SEO title="Home" />
       <GlobalStyle />
-      <Press/>
       <Hero/>
-      <PreOrder />
-      <AboutBook/>
+      <PreOrder/>
       <AboutSarah/>
-      <Brands/>
-      <Gallery/>
+      <Press/>
       <Contact/>
       <Footer/>
     </Main>
@@ -36,7 +30,7 @@ const IndexPage = () => (
 )
 
 const Main = styled.main`
-  margin-top: 2em;
+  margin-top: 0em;
 `
 
 export default IndexPage
