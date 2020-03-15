@@ -15,6 +15,8 @@ const Reviews = () => {
                 <H3 textAlign="center">What people are saying</H3>
                 <H2 textAlign="center">Reviews</H2>
 
+                <Carousel>
+                    
                 <CarouselProvider
                     naturalSlideWidth={100}
                     naturalSlideHeight={2}
@@ -24,21 +26,44 @@ const Reviews = () => {
                     visibleSlides={3}
                 >
                     <Slider>
-                        <Slide index={0}><P textAlign="center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</P></Slide>
-                        <Slide index={1}><P textAlign="center">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?"</P></Slide>
+                        <Slide index={0}></Slide>
+                        <Slide index={1}><P textAlign="center">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "</P></Slide>
                         <Slide index={2}><P textAlign="center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</P></Slide>
                         <Slide index={3}><P textAlign="center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</P></Slide>
                         <Slide index={4}><P textAlign="center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</P></Slide>
                         <Slide index={5}><P textAlign="center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</P></Slide>
                     </Slider>
-                    <ButtonBack>Back</ButtonBack>
-                    <ButtonNext>Next</ButtonNext>
+                    <Buttons>
+                        <ButtonBack>Back</ButtonBack>
+                        <ButtonNext style={{ float: "right" }}>Next</ButtonNext>
+                    </Buttons>
                 </CarouselProvider>
+                <Gradient></Gradient>
+                </Carousel>
             </Container>
         </section>
     );
 };
 
+const Buttons = styled.div`
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 1;
+`
+
+const Carousel = styled.div`
+    position: relative;
+    
+`
+const Gradient = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 90%);
+`
 
 
 export default Reviews;

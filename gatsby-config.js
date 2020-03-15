@@ -14,15 +14,18 @@ module.exports = {
           // Add any options here
         },
     },
-    // {
-    //   resolve: "gatsby-plugin-web-font-loader",
-    //       options: {
-    //         custom: {
-    //           families: ["Brandon Grotesque, Cervo Neue"],
-    //           urls: ["/fonts/fonts.css"],
-    //         },
-    //       },
-    // },
+    {
+      resolve: `gatsby-source-facebook`,
+      options: {
+        places: '120728004620479', // Can be either a numeric ID or the URL ID
+        params: {
+          fields: 'hours', // See Facebooks API to see what you can query for
+        },
+        key: 'EAAB7KyAIiV8BAMxd6OSZBD6zKoQ4mjOWQoh0rlrltpUZAeZC7TMHDoQZBGM8I8aRl21OaTtXbrbjiW3ekB5ZC76xZCLGxm32OxZCxt5YShJL46hPoRRsVukB476zed2ZCatSKZBvKt6XoefZCa3RtjHx68wB6gdwfxiLJ25axMloBOkZBsGE7j40NMWez82ZB3P1swOfvz09nRva8gZDZD', // You will need to create a Facebook application and go through review in order to get an API token.
+        version: '6.0', // The version of the graph API to use. Defaults to 5.0
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
