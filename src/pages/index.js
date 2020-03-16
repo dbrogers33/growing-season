@@ -22,7 +22,6 @@ const IndexPage = ({ data }) => {
   const posts = data.allFacebookPosts.edges
     .map(edge => edge.node)
     .filter(post => post.message)
-    .slice(0, 9)
 return (
 
     <Main>
@@ -35,6 +34,7 @@ return (
       <Facebook>
         {posts.map(post => (
           <Post 
+            time={post.created_time}
             message={post.message}
             link={post.permalink_url}>
           </Post>
@@ -52,14 +52,15 @@ const Main = styled.main`
   margin-top: 0em;
 `
 const Facebook = styled.main`
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    width: 90%;
+    margin: 6em auto;
 `
 export const query = graphql`
   query ActualitePageQuery {
-    allFacebookPosts {
+    allFacebookPosts(limit: 9) {
       edges {
         node {
           id

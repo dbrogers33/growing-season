@@ -3,6 +3,9 @@ const fbQuery = `posts {
   created_time,
   id,
   permalink_url,
+  picture {
+    profile_pic_source
+  },
   attachments {
     url,
     type,
@@ -35,7 +38,7 @@ module.exports = {
         params: {
           fields: fbQuery,
         },
-        key: `EAAB7KyAIiV8BAFVHr7jgQo2gSROUpK05k2CfwX5MAa1nLx8tBPAvQoRCiiAbZCe4tDHQ3OVyCnnvzmumQI2lJ1DbN71qEi1CYZAAxjMyPguve0ajGaxZAkEieqibwJ4vMLuCfGRGqg1rhXrQGZA33ZBkaWZBQj0ZBvjh7nnOxIXtVknCrlP0JeRNwwA1egiqfcbVOgZA1YGVIwZDZD`,
+        key: `EAAB7KyAIiV8BAK6XNlpwOlZAr2HZB00n2EOek6p4lgFoItb7N7N6mBJiV3pf7nICWbZACBIdJGMdXtDP3VPiUx8agiZB2wi17bAsKhpDnP3u8agcy3k9eL2OXPZBD3JggVWCQYOfIweDY1nupAanQ5CcrNT5zlZAwZD`,
       },
     },
     {
