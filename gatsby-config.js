@@ -1,3 +1,17 @@
+const fbQuery = `posts {
+  message,
+  created_time,
+  id,
+  permalink_url,
+  attachments {
+    url,
+    type,
+    title,
+    media,
+    target
+  }
+}`
+
 module.exports = {
   siteMetadata: {
     title: `The Growing Season by Sarah Frey`,
@@ -17,15 +31,13 @@ module.exports = {
     {
       resolve: `gatsby-source-facebook`,
       options: {
-        places: '120728004620479', // Can be either a numeric ID or the URL ID
+        places: [`hutsoninc`],
         params: {
-          fields: 'hours', // See Facebooks API to see what you can query for
+          fields: fbQuery,
         },
-        key: 'EAAB7KyAIiV8BAMxd6OSZBD6zKoQ4mjOWQoh0rlrltpUZAeZC7TMHDoQZBGM8I8aRl21OaTtXbrbjiW3ekB5ZC76xZCLGxm32OxZCxt5YShJL46hPoRRsVukB476zed2ZCatSKZBvKt6XoefZCa3RtjHx68wB6gdwfxiLJ25axMloBOkZBsGE7j40NMWez82ZB3P1swOfvz09nRva8gZDZD', // You will need to create a Facebook application and go through review in order to get an API token.
-        version: '6.0', // The version of the graph API to use. Defaults to 5.0
+        key: `EAAB7KyAIiV8BAFVHr7jgQo2gSROUpK05k2CfwX5MAa1nLx8tBPAvQoRCiiAbZCe4tDHQ3OVyCnnvzmumQI2lJ1DbN71qEi1CYZAAxjMyPguve0ajGaxZAkEieqibwJ4vMLuCfGRGqg1rhXrQGZA33ZBkaWZBQj0ZBvjh7nnOxIXtVknCrlP0JeRNwwA1egiqfcbVOgZA1YGVIwZDZD`,
       },
     },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
