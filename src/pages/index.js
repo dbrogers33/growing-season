@@ -34,7 +34,10 @@ return (
       <Reviews />
       <Facebook>
         {posts.map(post => (
-          <Post><p key={post.id}>{post.message}</p></Post>
+          <Post 
+            message={post.message}
+            link={post.permalink_url}>
+          </Post>
         ))}
       </Facebook>
       <Press/>

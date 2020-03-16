@@ -29,7 +29,7 @@ export default () => (
                     <Text textAlign="center">To schedule an interview with Sarah Frey please contact:</Text>
                     <Name textAlign="center">Sarah Breivogel</Name>
                     <Text textAlign="center">(212) 572-2722</Text>
-                    <Text textAlign="center"><a href="mailto:sbreivogel@peguinrandhouse.com">sbreivogel@peguinrandhouse.com</a></Text>
+                    <Text textAlign="center"><a href="mailto:sbreivogel@peguinrandomhouse.com">sbreivogel@peguinrandhouse.com</a></Text>
                 </Content>
                
                 <Img
