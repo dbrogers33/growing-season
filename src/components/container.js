@@ -10,7 +10,7 @@ const Container = ({ children }) => {
 const Wrap = styled.div`
     margin: 0 auto;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1400px;
 `
 
 

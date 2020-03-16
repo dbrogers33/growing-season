@@ -41,7 +41,7 @@ export default () => (
                         <Copy>
                             <H3>ABOUT THE AUTHOR</H3>
                             <H2>Meet Sarah</H2>
-                            <P>Sarah Frey is the Founding Farmer of Frey Farms, a major produce and beverage provider with operations in seven states. The fast-growing company supplies fresh produce and beverages to retailers nationwide, and has undertaken a mission to eliminate food waste by using unused fruit to create a line of healthy fruit juices and produce marketed under the company’s Sarah’s Homegrown brand. Frey’s ability to negotiate has been featured in a Harvard Business School case study. Frey Farms is based in Orchardville, Ill., the town where Frey grew up and launched her business.</P>
+                            <P>Sarah Frey is the Founding Farmer and CEO of Frey Farms. Frey was born in Southern Illinois and raised in the small farming community of Orchardville. At age 16, Frey was determined to escape rural poverty and started a fresh produce delivery business out of the back of an old pickup truck. After a hardscrabble adolescence, she learned to survive and eventually thrive off the land on which she was raised. As a teenager, with a healthy dose of moxie, she began negotiating fresh produce deals with the nation’s largest retailers. Nearly two decades later, the family business manages thousands of acres of fruit and vegetables on farms in Florida, Georgia, Missouri, Arkansas, Illinois, Indiana, and West Virginia. Dubbed “America’s Pumpkin Queen” by the New York Times, she sells millions of pumpkins annually. Her humble beginnings and early life on the farm inspired her to develop “Sarah’s Homegrown,” a line of fresh beverages and natural food products made from unmarketable or “ugly fruit.” Frey is a vocal advocate for American farmers and has a longstanding commitment to improving the quality of life for those living and working in the nation’s most rural communities. She still lives, works and is raising her two sons, William and Luke, on the same small farm where she grew up.</P>
                         </Copy>
                     </Flexitem>
 
@@ -56,13 +56,13 @@ export default () => (
 const Content = styled.div`
     background: #F7FCF9;
     margin: 8em 0 4em  0;
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
         display: flex;
         align-items: stretch;
     }
 `
 const Flexitem = styled.div`
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
         width: 50%;
     }
 `
