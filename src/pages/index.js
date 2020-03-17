@@ -21,16 +21,18 @@ const IndexPage = ({ data }) => {
   const posts = data.allFacebookPosts.edges
     .map(edge => edge.node)
     .filter(post => post.message)
-return (
+  return (
 
     <Main>
       <SEO title="Home" />
       <GlobalStyle />
-      <Hero/>
-      <PreOrder/>
-      <AboutSarah/>
+      <Hero />
+      <PreOrder />
+      <AboutSarah />
       <Reviews />
       <Facebook>
+
+
         {posts.map(post => (
           <Post 
             profilePic={data.facebookPicture.data.url}
@@ -39,13 +41,39 @@ return (
             link={post.permalink_url}>
           </Post>
         ))}
+
+
+        {/* {posts.map(post => {
+          return (
+            <div>
+              {post.attachments.data.media === null ? (
+                <Post 
+                profilePic={data.facebookPicture.data.url}
+                time={post.created_time}
+                message={post.message}
+                link={post.permalink_url}
+                />
+              
+              ) : (
+                <Post 
+                media={post.attachments.data.media.image.src}
+                profilePic={data.facebookPicture.data.url}
+                time={post.created_time}
+                message={post.message}
+                link={post.permalink_url}
+                />
+              )}
+            </div>
+          );
+        })} */}
+
       </Facebook>
-      <Press/>
-      <Contact/>
-      <Footer/>
+      <Press />
+      <Contact />
+      <Footer />
     </Main>
 
-)
+  )
 }
 
 const Main = styled.main`
