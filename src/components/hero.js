@@ -65,6 +65,10 @@ export default () => (
                     </FlexItemOne>
 
                     <FlexItemTwo>
+                        <Bio>
+                            <Name>Sarah Frey</Name>
+                            <Tagline>Founder and CEO of Frey Farms</Tagline>
+                        </Bio>
                         <Img
                             fluid={data.sarah.childImageSharp.fluid}
                             objectFit='cover'
@@ -82,7 +86,7 @@ export default () => (
   )
 
 
-  const Content = styled.div`
+const Content = styled.div`
     margin: 2em 0;
 `
 const Flexbox = styled.div`
@@ -96,9 +100,26 @@ const FlexItemOne = styled.div `
         width: 60%;
     }
 `
-
-const FlexItemTwo = styled.div`
+const FlexItemTwo = styled.div` 
+    position: relative;
     @media (min-width: 800px) {
         width: 40%;
     }
+`
+const Bio = styled.div`
+    color: #fff;
+    position: absolute;
+    bottom: 6em;
+    left: 3em;
+    z-index: 1;
+`
+const Name = styled.p`
+    font-family: 'Handelson';
+    font-size: 78px;
+    margin: 0;
+`
+const Tagline = styled.p`
+    font-family: 'Brandon Grotesque Regular';
+    font-size: 16px;
+    margin: -.4em 0 0 .5em;
 `

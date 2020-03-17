@@ -69,7 +69,7 @@ const Message = styled.p`
     text-align: ${props => props.textAlign};
     font-display: auto;
     line-height: 1.45em;
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
         font-size: 18px;
     }
 `
