@@ -50,15 +50,20 @@ export default () => (
                                 Frey Farms sells more pumpkins than any other producer in the nation, earning Frey the nickname “America’s Pumpkin Queen.” 
                                 
                                 <br /><br />
-                                <Img
+                                <MobileImage
                                     fluid={data.book.childImageSharp.fluid}
                                     objectFit='cover'
                                     objectPosition='50% 50%'
                                     alt='Sarah Frey holding pumpkins leaning on a truck'
-                                    style={{ width: "50%", float: "right"}}
                                 />
                                 
                                 Filled with grit and grace, The Growing Season: How I Saved an American Farm -- and Built a New Life, tells the honest and inspiring story of how a scrappy upbringing gave Frey the resilience and work ethic to take risks and thrive, while at the same time maintaining the close ties to the community -- and the farm -- where she grew up. </P>
+                                <DesktopImage
+                                    fluid={data.book.childImageSharp.fluid}
+                                    objectFit='cover'
+                                    objectPosition='50% 50%'
+                                    alt='Sarah Frey holding pumpkins leaning on a truck'
+                                />
                             </Content>
 
                         </Container>
@@ -85,6 +90,20 @@ export default () => (
     />
   )
 
+const MobileImage = styled(Img)`
+        width: 60%;
+        float: right;
+    @media (max-width: 899px) {
+        display: none;
+    }
+`
+
+const DesktopImage = styled(Img)`
+        width: 100%;
+    @media (min-width: 900px) {
+        display: none;
+    }
+`
 
 const Content = styled.div`
     margin: 2em 0;
