@@ -83,10 +83,16 @@ const Reviews = () => {
 };
 
 const Desktop = styled.div`
-    @media (max-width: 1200px) {
+    @media (max-width: 1199px) {
         display: none;
     }
 `
+const Mobile = styled.div`
+    @media (min-width: 1200px) {
+        display: none;
+    }
+`
+
 const Quotes = styled.div`
     width: 80%;
     margin: 0 auto;
@@ -108,12 +114,6 @@ const NewButtonNext= styled(ButtonNext)`
     &:focus {
         border: none;
         outline: 0;
-    }
-`
-
-const Mobile = styled.div`
-    @media (min-width: 1199px) {
-        display: none;
     }
 `
 
