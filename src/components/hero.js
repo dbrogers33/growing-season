@@ -91,16 +91,16 @@ export default () => (
   )
 
 const MobileImage = styled(Img)`
-        width: 60%;
-        float: right;
-    @media (max-width: 900px) {
+    width: 60%;
+    float: right;
+    @media (min-width: 899px) {
         display: none;
     }
 `
 
 const DesktopImage = styled(Img)`
-        width: 100%;
-    @media (min-width: 899px) {
+    width: 100%;
+    @media (max-width: 900px) {
         display: none;
     }
 `
