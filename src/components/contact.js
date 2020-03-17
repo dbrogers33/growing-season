@@ -26,7 +26,10 @@ export default () => (
             <Border>
                 <Content>
                     <H3 textAlign="center">Press and Media</H3>
-                    <Text textAlign="center">To schedule an interview with Sarah Frey please contact:</Text>
+                    <Text textAlign="center">To send Sarah Frey a message:</Text>
+                    <Text textAlign="center"><a href="mailto:sara@sarahfrey.com">sarah@sarahfrey.com</a></Text>
+                    <br />
+                    <Text textAlign="center">For media inquires and permissions:</Text>
                     <Name textAlign="center">Sarah Breivogel</Name>
                     <Text textAlign="center">(212) 572-2722</Text>
                     <Text textAlign="center"><a href="mailto:sbreivogel@peguinrandomhouse.com">sbreivogel@peguinrandhouse.com</a></Text>
@@ -61,23 +64,23 @@ const Content = styled.div`
 const Text = styled.div`
     font-family: 'Brandon Grotesque Regular';
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     text-align: ${props => props.textAlign};
     font-display: auto;
     line-height: 1.5em;
-    @media (min-width: 800px) {
-        font-size: 22px;
+    @media (min-width: 1200px) {
+        font-size: 20px;
     }
 `
 
 const Name = styled.div`
     font-family: 'Brandon Grotesque Bold';
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     text-align: ${props => props.textAlign};
     font-display: auto;
     line-height: 1.5em;
-    @media (min-width: 800px) {
-        font-size: 22px;
+    @media (min-width: 1200px) {
+        font-size: 20px;
     }
 `
