@@ -5,11 +5,11 @@ import H3 from "../components/typography/h3"
 
 // reference this for facebook source https://github.com/drazik/tcfranconville/blob/master/src/pages/actualite.js
 
-const Post = ({ link, message, media, time }) => {
+const Post = ({ link, message, media, time, profilePic }) => {
     return (
         <Wrap>
             <Grid>
-                <Profile></Profile>
+                <Profile profilePic={profilePic}></Profile>
                 <div>
                     <H3>Sarah Frey</H3>
                     <Time>{time}</Time>
@@ -35,7 +35,7 @@ const Grid = styled.div`
     grid-gap: 1em;
 `
 const Time = styled.p`
-    margin: 0;
+    margin: -.35em 0;
     font-family: 'Brandon Grotesque Regular';
     color: #545454;
     font-size: 14px;
@@ -46,6 +46,10 @@ const Profile = styled.div`
     height: 3em;
     background: black;
     border-radius: 1.5em;
+    border: 1px #545454 solid;
+    background-image: url(${props => props.profilePic});
+    background-size: cover;
+    background-position: 50% 50%;
 `
 const FacebookLink = styled.a`
     font-family: 'Brandon Grotesque Regular';

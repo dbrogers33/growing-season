@@ -18,7 +18,6 @@ import 'normalize.css'
 import GlobalStyle from '../components/global-styles'
 
 const IndexPage = ({ data }) => {
-  
   const posts = data.allFacebookPosts.edges
     .map(edge => edge.node)
     .filter(post => post.message)
@@ -34,6 +33,7 @@ return (
       <Facebook>
         {posts.map(post => (
           <Post 
+            profilePic={data.facebookPicture.data.url}
             time={post.created_time}
             message={post.message}
             link={post.permalink_url}>
@@ -59,7 +59,12 @@ const Facebook = styled.main`
     margin: 6em auto;
 `
 export const query = graphql`
-  query ActualitePageQuery {
+  query {
+    facebookPicture {
+      data {
+        url
+      }
+    }
     allFacebookPosts(limit: 9) {
       edges {
         node {

@@ -1,4 +1,6 @@
-const fbQuery = `posts {
+const fbQuery = `
+picture,
+posts {
   message,
   created_time,
   id,
