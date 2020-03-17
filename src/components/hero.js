@@ -90,6 +90,14 @@ export default () => (
     />
   )
 
+  const DesktopImage = styled(Img)`
+    width: 60%;
+    float: right;
+    @media (max-width: 899px) {
+        display: none;
+    }
+`
+
 const MobileImage = styled(Img)`
     width: 100%;
     @media (min-width: 900px) {
@@ -97,13 +105,7 @@ const MobileImage = styled(Img)`
     }
 `
 
-const DesktopImage = styled(Img)`
-    width: 60%;
-    float: right;
-    @media (max-width: 899px) {
-        display: none;
-    }
-`
+
 
 const Content = styled.div`
     margin: 2em 0;
