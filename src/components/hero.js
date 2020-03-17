@@ -57,13 +57,14 @@ export default () => (
                                     alt='Sarah Frey holding pumpkins leaning on a truck'
                                 />
                                 
-                                Filled with grit and grace, The Growing Season: How I Saved an American Farm -- and Built a New Life, tells the honest and inspiring story of how a scrappy upbringing gave Frey the resilience and work ethic to take risks and thrive, while at the same time maintaining the close ties to the community -- and the farm -- where she grew up. </P>
+                                Filled with grit and grace, The Growing Season: How I Saved an American Farm -- and Built a New Life, tells the honest and inspiring story of how a scrappy upbringing gave Frey the resilience and work ethic to take risks and thrive, while at the same time maintaining the close ties to the community -- and the farm -- where she grew up. 
                                 <MobileImage
                                     fluid={data.book.childImageSharp.fluid}
                                     objectFit='cover'
                                     objectPosition='50% 50%'
                                     alt='Sarah Frey holding pumpkins leaning on a truck'
                                 />
+                                </P>
                             </Content>
 
                         </Container>
