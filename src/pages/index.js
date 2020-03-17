@@ -85,7 +85,7 @@ const Main = styled.main`
 const Facebook = styled.main`
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(325px,1fr));
     width: 90%;
     margin: 6em auto;
 `
