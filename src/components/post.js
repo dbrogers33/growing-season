@@ -5,7 +5,7 @@ import H3 from "../components/typography/h3"
 
 // reference this for facebook source https://github.com/drazik/tcfranconville/blob/master/src/pages/actualite.js
 
-const Post = ({ link, message, media, time, profilePic }) => {
+const Post = ({ link, message, media, time, profilePic, test }) => {
     return (
         <Wrap>
             <Grid>
@@ -15,6 +15,7 @@ const Post = ({ link, message, media, time, profilePic }) => {
                     <Time>{time}</Time>
                 </div>
             </Grid>
+            <p>{test}</p>
             <Message>{message}</Message>
             <img src={media} />
             <FacebookLink href={link} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>

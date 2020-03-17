@@ -36,8 +36,8 @@ const Reviews = () => {
                             <Slide index={5}><P textAlign="center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</P></Slide>
                         </Slider>
                         <Buttons>
-                            <ButtonBack>Back</ButtonBack>
-                            <ButtonNext style={{ float: "right" }}>Next</ButtonNext>
+                            <NewButtonBack><img src="/arrow.png" alt="back arrow" /></NewButtonBack>
+                            <NewButtonNext style={{ float: "right" }}><img src="/arrow.png" alt="next arrow" /></NewButtonNext>
                         </Buttons>
                     </CarouselProvider>
                     <Gradient></Gradient>
@@ -61,6 +61,7 @@ const Reviews = () => {
                         isIntrinsicHeight="true"
                         visibleSlides={1}
                     >
+                        <Quotes>
                         <Slider>
                             <Slide index={0}><P textAlign="center">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "</P></Slide>
                             <Slide index={1}><P textAlign="center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</P></Slide>
@@ -68,9 +69,10 @@ const Reviews = () => {
                             <Slide index={3}><P textAlign="center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</P></Slide>
                             <Slide index={4}><P textAlign="center">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</P></Slide>
                         </Slider>
+                        </Quotes>
                         <Buttons>
-                            <ButtonBack>Back</ButtonBack>
-                            <ButtonNext style={{ float: "right" }}>Next</ButtonNext>
+                        <NewButtonBack><img src="/arrow.png" alt="back arrow" /></NewButtonBack>
+                            <NewButtonNext style={{ float: "right" }}><img src="/arrow.png" alt="next arrow" /></NewButtonNext>
                         </Buttons>
                     </CarouselProvider>
                     </Carousel>
@@ -83,6 +85,29 @@ const Reviews = () => {
 const Desktop = styled.div`
     @media (max-width: 1200px) {
         display: none;
+    }
+`
+const Quotes = styled.div`
+    width: 80%;
+    margin: 0 auto;
+`
+
+const NewButtonBack = styled(ButtonBack)`
+    border: none;
+    background: rgba(0,0,0,0);
+    transform: rotate(180deg);
+    &:focus {
+        border: none;
+        outline: 0;
+    }
+`
+
+const NewButtonNext= styled(ButtonNext)`
+    border: none;
+    background: rgba(0,0,0,0);
+    &:focus {
+        border: none;
+        outline: 0;
     }
 `
 

@@ -48,6 +48,7 @@ const IndexPage = ({ data }) => {
             <div>
               {post.attachments.data.media === null ? (
                 <Post 
+                test="no image"
                 key={key}
                 profilePic={data.facebookPicture.data.url}
                 time={post.created_time}
@@ -58,7 +59,7 @@ const IndexPage = ({ data }) => {
               ) : (
                 <Post
                 key={key}
-                
+                test="has image"
                 profilePic={data.facebookPicture.data.url}
                 time={post.created_time}
                 message={post.message}
