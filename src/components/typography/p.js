@@ -24,7 +24,7 @@ const P = styled.p`
     text-align: ${props => props.textAlign};
     font-display: auto;
     line-height: 1.5em;
-    @media (min-width: 800px) {
+    @media (min-width: 1400px) {
         font-size: 22px;
     }
 `

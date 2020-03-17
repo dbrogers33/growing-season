@@ -86,8 +86,10 @@ export default () => (
     margin: 2em 0;
 `
 const Flexbox = styled.div`
+ @media (min-width: 800px) {
     display: flex;
     align-items: stretch;
+ }
 `
 const FlexItemOne = styled.div `
     @media (min-width: 800px) {
