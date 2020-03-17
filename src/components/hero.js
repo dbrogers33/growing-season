@@ -109,9 +109,13 @@ const FlexItemTwo = styled.div`
 const Bio = styled.div`
     color: #fff;
     position: absolute;
-    bottom: 6em;
+    bottom: 3em;
     left: 3em;
     z-index: 1;
+    @media (min-width: 800px) {
+        bottom: 6em;
+        left: 3em;
+ }
 `
 const Name = styled.p`
     font-family: 'Handelson';
