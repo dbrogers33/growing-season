@@ -89,6 +89,7 @@ const Facebook = styled.main`
     width: 90%;
     margin: 6em auto;
 `
+
 export const query = graphql`
   query {
     facebookPicture {
