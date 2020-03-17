@@ -100,7 +100,7 @@ export const query = graphql`
         node {
           id
           message
-          created_time
+          created_time(formatString: "MMM DD YYYY")
           permalink_url
           attachments {
             data {
