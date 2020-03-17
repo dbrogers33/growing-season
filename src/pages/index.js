@@ -33,21 +33,22 @@ const IndexPage = ({ data }) => {
       <Facebook>
 
 
-        {posts.map(post => (
+        {/* {posts.map(post => (
           <Post 
             profilePic={data.facebookPicture.data.url}
             time={post.created_time}
             message={post.message}
             link={post.permalink_url}>
           </Post>
-        ))}
+        ))} */}
 
 
-        {/* {posts.map(post => {
+        {posts.map((post, key) => {
           return (
             <div>
               {post.attachments.data.media === null ? (
                 <Post 
+                key={key}
                 profilePic={data.facebookPicture.data.url}
                 time={post.created_time}
                 message={post.message}
@@ -55,8 +56,9 @@ const IndexPage = ({ data }) => {
                 />
               
               ) : (
-                <Post 
-                media={post.attachments.data.media.image.src}
+                <Post
+                key={key}
+                
                 profilePic={data.facebookPicture.data.url}
                 time={post.created_time}
                 message={post.message}
@@ -65,7 +67,7 @@ const IndexPage = ({ data }) => {
               )}
             </div>
           );
-        })} */}
+        })}
 
       </Facebook>
       <Press />
