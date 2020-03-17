@@ -19,11 +19,14 @@ const Copyright = styled.p`
     font-family: 'Brandon Grotesque Bold';
     text-transform: uppercase;
     color: #fff;
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
     font-display: auto;
     line-height: 1.5em;
     letter-spacing: .09em;
+    @media (min-width: 1400px) {
+        font-size: 36px;
+    }
 `
 
 export default Header;

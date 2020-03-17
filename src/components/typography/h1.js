@@ -22,11 +22,11 @@ const H1 = styled.h1`
     font-family: 'Brandon Grotesque Bold';
     color: #000;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 28px;
     text-align: ${props => props.textAlign};
     margin: .1em 0;
     @media (min-width: 800px) {
-        font-size: 50px;
+        font-size: 36px;
     }
 `
 export default h1;
