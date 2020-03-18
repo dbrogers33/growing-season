@@ -44,28 +44,18 @@ const IndexPage = ({ data }) => {
 
 
         {posts.map((post, key) => {
+           console.log(post.attachments.data[0].media.image.src)
           return (
-            <div>
-              {post.attachments.data.media === null ? (
+            <div key={key}>
+             
                 <Post 
-                test="no image"
-                key={key}
+                media={post.attachments.data[0].media.image.src}
                 profilePic={data.facebookPicture.data.url}
                 time={post.created_time}
                 message={post.message}
                 link={post.permalink_url}
                 />
               
-              ) : (
-                <Post
-                key={key}
-                test="has image"
-                profilePic={data.facebookPicture.data.url}
-                time={post.created_time}
-                message={post.message}
-                link={post.permalink_url}
-                />
-              )}
             </div>
           );
         })}
@@ -97,7 +87,7 @@ export const query = graphql`
         url
       }
     }
-    allFacebookPosts(limit: 9) {
+    allFacebookPosts (limit: 9) {
       edges {
         node {
           id

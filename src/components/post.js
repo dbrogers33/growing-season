@@ -15,9 +15,8 @@ const Post = ({ link, message, media, time, profilePic, test }) => {
                     <Time>{time}</Time>
                 </div>
             </Grid>
-            <p>{test}</p>
             <Message>{message}</Message>
-            <img src={media} />
+            <Image src={media} alt="test"/>
             <FacebookLink href={link} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
         </Wrap>
     );
@@ -30,6 +29,10 @@ const Wrap = styled.div`
         
     }
 `
+const Image = styled.img`
+    width: 100%;
+`
+
 const Grid = styled.div`
     display: grid;
     grid-template-columns: 3em auto;
