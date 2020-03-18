@@ -9,7 +9,7 @@ import AboutSarah from "../components/about-sarah"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
 import Reviews from "../components/reviews"
-import Post from "../components/post"
+import H3 from "../components/typography/h3"
 
 import styled from "styled-components";
 
@@ -44,20 +44,40 @@ const IndexPage = ({ data }) => {
 
 
         {posts.map((post, key) => {
-           console.log(post.attachments.data[0].media.image.src)
-          return (
+
+          return post.attachments !== null ?
+            
             <div key={key}>
-             
-                <Post 
-                media={post.attachments.data[0].media.image.src}
-                profilePic={data.facebookPicture.data.url}
-                time={post.created_time}
-                message={post.message}
-                link={post.permalink_url}
-                />
+                <Wrap>
+            <Grid>
+                <Profile profilePic={data.facebookPicture.data.url}></Profile>
+                <div>
+                    <H3>Sarah Frey</H3>
+                    <Time>{post.created_time}</Time>
+                </div>
+              </Grid>
+              <Message>{post.message}</Message>
+              <Image src={post.attachments.data[0].media.image.src} alt="test"/>
+              <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
+          </Wrap>
               
             </div>
-          );
+            :
+            <div key={key}>
+                 <Wrap>
+            <Grid>
+                <Profile profilePic={data.facebookPicture.data.url}></Profile>
+                <div>
+                    <H3>Sarah Frey</H3>
+                    <Time>{post.created_time}</Time>
+                </div>
+              </Grid>
+              <Message>{post.message}</Message>
+              <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
+          </Wrap>
+              
+            </div>
+          
         })}
 
       </Facebook>
@@ -79,6 +99,61 @@ const Facebook = styled.main`
     width: 90%;
     margin: 6em auto;
 `
+const Wrap = styled.div`
+    border: 1px solid #C4C4C4;
+    padding: 2em;
+     @media (min-width: 600px) {
+        
+    }
+`
+const Image = styled.img`
+    width: 100%;
+`
+
+const Grid = styled.div`
+    display: grid;
+    grid-template-columns: 3em auto;
+    grid-gap: 1em;
+`
+const Time = styled.p`
+    margin: -.35em 0;
+    font-family: 'Brandon Grotesque Regular';
+    color: #545454;
+    font-size: 14px;
+`
+
+const Profile = styled.div`
+    width: 3em;
+    height: 3em;
+    background: black;
+    border-radius: 1.5em;
+    border: 1px #545454 solid;
+    background-image: url(${props => props.profilePic});
+    background-size: cover;
+    background-position: 50% 50%;
+`
+const FacebookLink = styled.a`
+    font-family: 'Brandon Grotesque Regular';
+    color: #0F5800;
+    font-size: 14px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+`
+
+const Message = styled.p`
+    font-family: 'Brandon Grotesque Regular';
+    color: #545454;
+    font-size: 16px;
+    text-align: ${props => props.textAlign};
+    font-display: auto;
+    line-height: 1.45em;
+    @media (min-width: 1200px) {
+        font-size: 18px;
+    }
+`
+
 
 export const query = graphql`
   query {
@@ -87,7 +162,7 @@ export const query = graphql`
         url
       }
     }
-    allFacebookPosts (limit: 9) {
+    allFacebookPosts (sort: {fields: created_time, order: DESC}, limit: 9) {
       edges {
         node {
           id
