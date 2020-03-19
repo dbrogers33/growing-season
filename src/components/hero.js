@@ -96,7 +96,7 @@ export default () => (
   )
 
   const DesktopImage = styled(Img)`
-    width: 60%;
+    width: 50%;
     float: right;
     @media (max-width: 899px) {
         display: none;
