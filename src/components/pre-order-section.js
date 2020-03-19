@@ -71,13 +71,15 @@ export default () => (
                     </a>
                 </Flexitem>
                 <Flexitem>
-                    <Img
-                        fluid={data.walmart.childImageSharp.fluid}
-                        objectFit='cover'
-                        objectPosition='50% 50%'
-                        alt='Pre order The Growing Season at Walmart'
-                        style={{ width: "100%" }}
-                    />
+                    <a href="https://www.walmart.com/ip/The-Growing-Season-How-I-Saved-an-American-Farm-and-Built-a-New-Life-9780593129395/375289573" target="_blank" rel="noopener noreferrer">
+                        <Img
+                            fluid={data.walmart.childImageSharp.fluid}
+                            objectFit='cover'
+                            objectPosition='50% 50%'
+                            alt='Pre order The Growing Season at Walmart'
+                            style={{ width: "100%" }}
+                        />
+                    </a>
                 </Flexitem>
                 <Flexitem>
                     <a href="https://www.penguinrandomhouse.com/books/610559/the-growing-season-by-sarah-frey/" target="_blank" rel="noopener noreferrer">
