@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+
 // Stuff that Denham has added
 import Press from "../components/press"
 import Hero from "../components/hero"
@@ -10,7 +11,7 @@ import Contact from "../components/contact"
 import Footer from "../components/footer"
 import Reviews from "../components/reviews"
 import H3 from "../components/typography/h3"
-
+import Masonry from 'react-masonry-component';
 import styled from "styled-components";
 
 import SEO from "../components/seo"
@@ -31,55 +32,46 @@ const IndexPage = ({ data }) => {
       <AboutSarah />
       <Reviews />
       <Facebook>
-
-
-        {/* {posts.map(post => (
-          <Post 
-            profilePic={data.facebookPicture.data.url}
-            time={post.created_time}
-            message={post.message}
-            link={post.permalink_url}>
-          </Post>
-        ))} */}
+      <Masonry>
 
 
         {posts.map((post, key) => {
 
           return post.attachments !== null ?
-            
-            <div key={key}>
-                <Wrap>
-            <Grid>
-                <Profile profilePic={data.facebookPicture.data.url}></Profile>
-                <div>
+
+
+              <Wrap key={key} >
+                <Grid>
+                  <Profile profilePic={data.facebookPicture.data.url}></Profile>
+                  <div>
                     <H3>Sarah Frey</H3>
                     <Time>{post.created_time}</Time>
-                </div>
-              </Grid>
-              <Message>{post.message}</Message>
-              <Image src={post.attachments.data[0].media.image.src} alt="test"/>
-              <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
-          </Wrap>
-              
-            </div>
+                  </div>
+                </Grid>
+                <Message>{post.message}</Message>
+                <Image src={post.attachments.data[0].media.image.src} alt="test" />
+                <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
+              </Wrap>
+
             :
-            <div key={key}>
-                 <Wrap>
-            <Grid>
-                <Profile profilePic={data.facebookPicture.data.url}></Profile>
-                <div>
+
+              <Wrap key={key}>
+                <Grid>
+                  <Profile profilePic={data.facebookPicture.data.url}></Profile>
+                  <div>
                     <H3>Sarah Frey</H3>
                     <Time>{post.created_time}</Time>
-                </div>
-              </Grid>
-              <Message>{post.message}</Message>
-              <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
-          </Wrap>
-              
-            </div>
-          
+                  </div>
+                </Grid>
+                <Message>{post.message}</Message>
+                <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
+              </Wrap>
+
+
+
         })}
 
+      </Masonry>
       </Facebook>
       <Press />
       <Contact />
@@ -93,18 +85,18 @@ const Main = styled.main`
   margin-top: 0em;
 `
 const Facebook = styled.main`
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fill, minmax(325px,1fr));
     width: 90%;
-    margin: 6em auto;
+    margin: 0 auto;
 `
 const Wrap = styled.div`
     border: 1px solid #C4C4C4;
     padding: 2em;
-     @media (min-width: 600px) {
-        
+    margin: 1em;
+    
+    @media (min-width: 800px) {
+      width: 18%;
     }
+    
 `
 const Image = styled.img`
     width: 100%;
