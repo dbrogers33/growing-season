@@ -92,9 +92,11 @@ const Wrap = styled.div`
     border: 1px solid #C4C4C4;
     padding: 2em;
     margin: 1em;
-    
+    box-sizing: border-box;
+    float: left;
     @media (min-width: 800px) {
-      width: 18%;
+      width: calc(100% / 4 - 2em);
+    
     }
     
 `
