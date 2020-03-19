@@ -86,7 +86,7 @@ const Main = styled.main`
 `
 const Facebook = styled.main`
     width: 90%;
-    margin: 0 auto;
+    margin: 4em auto 0 auto;
 `
 const Wrap = styled.div`
     border: 1px solid #C4C4C4;
@@ -94,9 +94,14 @@ const Wrap = styled.div`
     margin: 1em;
     box-sizing: border-box;
     float: left;
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       width: calc(100% / 4 - 2em);
-    
+    }
+    @media (max-width: 1199px) and (min-width: 800px) {
+      width: calc(100% / 3 - 2em);
+    }
+    @media (min-width: 599px) and (max-width: 799px) {
+      width: calc(100% / 2 - 2em);
     }
     
 `
