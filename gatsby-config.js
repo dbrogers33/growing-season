@@ -1,20 +1,9 @@
 const fbQuery = `
-picture,
 posts {
   message,
   created_time,
   id,
-  permalink_url,
-  picture {
-    profile_pic_source
-  },
-  attachments {
-    url,
-    type,
-    title,
-    media,
-    target
-  }
+  permalink_url
 }`
 
 module.exports = {
@@ -36,11 +25,11 @@ module.exports = {
     {
       resolve: `gatsby-source-facebook`,
       options: {
-        places: [`hutsoninc`],
+        places: [`me`],
         params: {
           fields: fbQuery,
         },
-        key: `EAAB7KyAIiV8BAK6XNlpwOlZAr2HZB00n2EOek6p4lgFoItb7N7N6mBJiV3pf7nICWbZACBIdJGMdXtDP3VPiUx8agiZB2wi17bAsKhpDnP3u8agcy3k9eL2OXPZBD3JggVWCQYOfIweDY1nupAanQ5CcrNT5zlZAwZD`,
+        key: `EAAYivF1CuzcBANurNyBUiQuvcJRtrZByvbdMpYpuxrBmZAauNcHS2iIlZCsKDVZC1vh2VCHMHknelUgTCdsYGBso9yutJxymU3jfHF50U9fg4rMZB9djaxA2iZA9Cu8TYzbHUmHAG91jfZAX52LJv2Tp70ATj9BbcSZAP1dkcwywnAMwYzWgSGhuhckwo4dKLdS41LZAnEZCAG7AZDZD`,
       },
     },
     {

@@ -35,41 +35,41 @@ const IndexPage = ({ data }) => {
       <Masonry>
 
 
-        {posts.map((post, key) => {
+        {posts.map((post, key) => (
 
-          return post.attachments !== null ?
+          // return post.attachments !== null ?
 
 
               <Wrap key={key} >
                 <Grid>
-                  <Profile profilePic={data.facebookPicture.data.url}></Profile>
+                  {/* <Profile profilePic={data.facebookPicture.data.url}></Profile> */}
                   <div>
                     <H3>Sarah Frey</H3>
                     <Time>{post.created_time}</Time>
                   </div>
                 </Grid>
                 <Message>{post.message}</Message>
-                <Image src={post.attachments.data[0].media.image.src} alt="test" />
+                {/* <Image src={post.attachments.data[0].media.image.src} alt="test" /> */}
                 <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
               </Wrap>
 
-            :
+            // :
 
-              <Wrap key={key}>
-                <Grid>
-                  <Profile profilePic={data.facebookPicture.data.url}></Profile>
-                  <div>
-                    <H3>Sarah Frey</H3>
-                    <Time>{post.created_time}</Time>
-                  </div>
-                </Grid>
-                <Message>{post.message}</Message>
-                <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
-              </Wrap>
+            //   <Wrap key={key}>
+            //     <Grid>
+            //       <Profile profilePic={data.facebookPicture.data.url}></Profile>
+            //       <div>
+            //         <H3>Sarah Frey</H3>
+            //         <Time>{post.created_time}</Time>
+            //       </div>
+            //     </Grid>
+            //     <Message>{post.message}</Message>
+            //     <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
+            //   </Wrap>
 
 
 
-        })}
+        ))}
 
       </Masonry>
       </Facebook>
@@ -125,10 +125,8 @@ const Profile = styled.div`
     width: 3em;
     height: 3em;
     background: black;
-    border-radius: 1.5em;
-    border: 1px #545454 solid;
     background-image: url(${props => props.profilePic});
-    background-size: cover;
+    background-size: cont;
     background-position: 50% 50%;
 `
 const FacebookLink = styled.a`
@@ -156,32 +154,13 @@ const Message = styled.p`
 
 export const query = graphql`
   query {
-    facebookPicture {
-      data {
-        url
-      }
-    }
-    allFacebookPosts (sort: {fields: created_time, order: DESC}, limit: 9) {
+    allFacebookPosts (sort: {fields: created_time, order: DESC}, limit: 4) {
       edges {
         node {
           id
           message
           created_time(formatString: "MMM DD YYYY")
           permalink_url
-          attachments {
-            data {
-              url
-              type
-              title
-              media {
-                image {
-                  height
-                  src
-                  width
-                }
-              }
-            }
-          }
         }
       }
     }
