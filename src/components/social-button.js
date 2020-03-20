@@ -6,14 +6,14 @@ import P from '../components/typography/p'
 const Container = ({ }) => {
     return (
         <div>
-            <Link href="https://www.instagram.com/sara__frey/" >
+            <Link href="https://www.instagram.com/sara__frey/" target="_blank" rel="noopener noreferrer">
                 <SocialButton>
-                        <FaInstagram style={{ fontSize: "18px", color: "rgba(0, 0, 0, 0.55)"}}/>
+                        <FaInstagram style={{ fontSize: "18px", color: "rgba(0, 0, 0, 0.55)" }}/>
                         <AccountName>@Sarah__Frey</AccountName>
                 </SocialButton>
             </Link>
 
-            <Link href="https://www.facebook.com/sarah.talley.39" >
+            <Link href="https://www.facebook.com/sarah.talley.39" target="_blank" rel="noopener noreferrer">
                 <SocialButton>
                         <FaFacebookF style={{ fontSize: "18px", color: "rgba(0, 0, 0, 0.55)"}}/>
                         <AccountName>@SarahFrey</AccountName>
