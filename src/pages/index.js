@@ -22,6 +22,7 @@ const IndexPage = ({ data }) => {
   const posts = data.allFacebookPosts.edges
     .map(edge => edge.node)
     .filter(post => post.message)
+    .filter(post => post.attachments.data[0].type === 'photo')
   return (
 
     <Main>
@@ -154,13 +155,18 @@ const Message = styled.p`
 
 export const query = graphql`
   query {
-    allFacebookPosts (sort: {fields: created_time, order: DESC}, limit: 4) {
+    allFacebookPosts (sort: {fields: created_time, order: DESC}, limit: 9) {
       edges {
         node {
           id
           message
           created_time(formatString: "MMM DD YYYY")
           permalink_url
+          attachments {
+            data {
+              type
+            }
+          }
         }
       }
     }

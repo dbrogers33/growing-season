@@ -3,7 +3,10 @@ posts {
   message,
   created_time,
   id,
-  permalink_url
+  permalink_url,
+  attachments {
+    type
+  }
 }`
 
 module.exports = {
@@ -29,7 +32,7 @@ module.exports = {
         params: {
           fields: fbQuery,
         },
-        key: `EAAYivF1CuzcBANurNyBUiQuvcJRtrZByvbdMpYpuxrBmZAauNcHS2iIlZCsKDVZC1vh2VCHMHknelUgTCdsYGBso9yutJxymU3jfHF50U9fg4rMZB9djaxA2iZA9Cu8TYzbHUmHAG91jfZAX52LJv2Tp70ATj9BbcSZAP1dkcwywnAMwYzWgSGhuhckwo4dKLdS41LZAnEZCAG7AZDZD`,
+        key: `EAAYivF1CuzcBAB4soGHjolmzHHXnMVV0Nyq7z2CutDUzIEAFygwsZBUHL9cQPawiqbGxYrYmPMzvqY2AGlHHHgRDmFhcBZCYdZBjQdjafHYDkPkJHldzuCm317ZBMGZAlup7T2pLzjXuZA4ziAhAUMBbfNcXrg8sVzuddG7G10AAZDZD`,
       },
     },
     {
