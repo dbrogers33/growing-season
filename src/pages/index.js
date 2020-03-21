@@ -23,6 +23,7 @@ const IndexPage = ({ data }) => {
     .map(edge => edge.node)
     .filter(post => post.message)
     .filter(post => post.attachments.data[0].type === 'photo')
+    .slice(0, 9)
   return (
 
     <Main>
@@ -44,7 +45,6 @@ const IndexPage = ({ data }) => {
               <Wrap key={key} >
                 <Grid>
                   <Profile profilePic={data.facebookPicture.data.url}></Profile>
-                  {console.log(data.facebookPicture.data.url)}
                   <div>
                     <H3>Sarah Frey</H3>
                     <Time>{post.created_time}</Time>
@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => {
                 </Grid>
                 <Message>{post.message}</Message>
                 <Image src={post.attachments.data[0].media.image.src} alt="test" />
-                {/* <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink> */}
+                <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
               </Wrap>
 
             // :
@@ -74,6 +74,9 @@ const IndexPage = ({ data }) => {
         ))}
 
       </Masonry>
+      <ButtonWrapper>
+        <SocialLink href="https://www.facebook.com/sarah.talley.39" target="_blank" rel="noopener noreferrer">View More Posts</SocialLink>
+      </ButtonWrapper>
       </Facebook>
       <Press />
       <Contact />
@@ -89,6 +92,24 @@ const Main = styled.main`
 const Facebook = styled.main`
     width: 90%;
     margin: 4em auto 0 auto;
+`
+const SocialLink = styled.a`
+  color: white;
+  background: #0F5800;
+  font-family: 'Brandon Grotesque Regular';
+  font-size: 18px;
+  padding: 1em 2em;
+  display: inline-block;
+  transition: ease .2s;
+  text-decoration: none;
+  &:hover {
+    background: #0F5400;
+    cursor: pointer;
+  }
+`
+const ButtonWrapper = styled.div`
+  margin: 0 auto;
+  display: table;
 `
 const Wrap = styled.div`
     border: 1px solid #C4C4C4;
@@ -166,7 +187,7 @@ export const query = graphql`
         node {
           id
           message
-          created_time(formatString: "MMM DD YYYY")
+          created_time(formatString: "ll")
           permalink_url
           attachments {
             data {
