@@ -5,7 +5,12 @@ posts {
   id,
   permalink_url,
   attachments {
-    type
+    type,
+    media {
+      image {
+        src
+      }
+    }
   }
 }`
 

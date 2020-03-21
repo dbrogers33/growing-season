@@ -39,19 +39,20 @@ const IndexPage = ({ data }) => {
         {posts.map((post, key) => (
 
           // return post.attachments !== null ?
-
-
+           
+          
               <Wrap key={key} >
                 <Grid>
                   {/* <Profile profilePic={data.facebookPicture.data.url}></Profile> */}
+                  {console.log(post.attachments.data[0].media.image.src)}
                   <div>
                     <H3>Sarah Frey</H3>
                     <Time>{post.created_time}</Time>
                   </div>
                 </Grid>
                 <Message>{post.message}</Message>
-                {/* <Image src={post.attachments.data[0].media.image.src} alt="test" /> */}
-                <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
+                <Image src={post.attachments.data[0].media.image.src} alt="test" />
+                {/* <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink> */}
               </Wrap>
 
             // :
@@ -155,7 +156,7 @@ const Message = styled.p`
 
 export const query = graphql`
   query {
-    allFacebookPosts (sort: {fields: created_time, order: DESC}, limit: 9) {
+    allFacebookPosts (sort: {fields: created_time, order: DESC}) {
       edges {
         node {
           id
@@ -165,6 +166,11 @@ export const query = graphql`
           attachments {
             data {
               type
+              media {
+                image {
+                  src
+                }
+              }
             }
           }
         }
