@@ -1,4 +1,7 @@
 const fbQuery = `
+picture {
+  url
+},
 posts {
   message,
   created_time,

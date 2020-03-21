@@ -43,8 +43,8 @@ const IndexPage = ({ data }) => {
           
               <Wrap key={key} >
                 <Grid>
-                  {/* <Profile profilePic={data.facebookPicture.data.url}></Profile> */}
-                  {console.log(post.attachments.data[0].media.image.src)}
+                  <Profile profilePic={data.facebookPicture.data.url}></Profile>
+                  {console.log(data.facebookPicture.data.url)}
                   <div>
                     <H3>Sarah Frey</H3>
                     <Time>{post.created_time}</Time>
@@ -156,6 +156,11 @@ const Message = styled.p`
 
 export const query = graphql`
   query {
+    facebookPicture {
+      data {
+        url
+      }
+    }
     allFacebookPosts (sort: {fields: created_time, order: DESC}) {
       edges {
         node {
