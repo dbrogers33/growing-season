@@ -1,19 +1,19 @@
 const fbQuery = `
-picture,
+picture {
+  url
+},
 posts {
   message,
   created_time,
   id,
   permalink_url,
-  picture {
-    profile_pic_source
-  },
   attachments {
-    url,
     type,
-    title,
-    media,
-    target
+    media {
+      image {
+        src
+      }
+    }
   }
 }`
 
@@ -36,11 +36,11 @@ module.exports = {
     {
       resolve: `gatsby-source-facebook`,
       options: {
-        places: [`hutsoninc`],
+        places: [`me`],
         params: {
           fields: fbQuery,
         },
-        key: `EAAB7KyAIiV8BAK6XNlpwOlZAr2HZB00n2EOek6p4lgFoItb7N7N6mBJiV3pf7nICWbZACBIdJGMdXtDP3VPiUx8agiZB2wi17bAsKhpDnP3u8agcy3k9eL2OXPZBD3JggVWCQYOfIweDY1nupAanQ5CcrNT5zlZAwZD`,
+        key: `EAAYivF1CuzcBAB4soGHjolmzHHXnMVV0Nyq7z2CutDUzIEAFygwsZBUHL9cQPawiqbGxYrYmPMzvqY2AGlHHHgRDmFhcBZCYdZBjQdjafHYDkPkJHldzuCm317ZBMGZAlup7T2pLzjXuZA4ziAhAUMBbfNcXrg8sVzuddG7G10AAZDZD`,
       },
     },
     {

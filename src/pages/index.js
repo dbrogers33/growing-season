@@ -22,6 +22,8 @@ const IndexPage = ({ data }) => {
   const posts = data.allFacebookPosts.edges
     .map(edge => edge.node)
     .filter(post => post.message)
+    .filter(post => post.attachments.data[0].type === 'photo')
+    .slice(0, 9)
   return (
 
     <Main>
@@ -35,11 +37,11 @@ const IndexPage = ({ data }) => {
       <Masonry>
 
 
-        {posts.map((post, key) => {
+        {posts.map((post, key) => (
 
-          return post.attachments !== null ?
-
-
+          // return post.attachments !== null ?
+           
+          
               <Wrap key={key} >
                 <Grid>
                   <Profile profilePic={data.facebookPicture.data.url}></Profile>
@@ -53,25 +55,28 @@ const IndexPage = ({ data }) => {
                 <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
               </Wrap>
 
-            :
+            // :
 
-              <Wrap key={key}>
-                <Grid>
-                  <Profile profilePic={data.facebookPicture.data.url}></Profile>
-                  <div>
-                    <H3>Sarah Frey</H3>
-                    <Time>{post.created_time}</Time>
-                  </div>
-                </Grid>
-                <Message>{post.message}</Message>
-                <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
-              </Wrap>
+            //   <Wrap key={key}>
+            //     <Grid>
+            //       <Profile profilePic={data.facebookPicture.data.url}></Profile>
+            //       <div>
+            //         <H3>Sarah Frey</H3>
+            //         <Time>{post.created_time}</Time>
+            //       </div>
+            //     </Grid>
+            //     <Message>{post.message}</Message>
+            //     <FacebookLink href={post.permalink_url} target="_blank" rel="noopener noreferrer">View on Facebook</FacebookLink>
+            //   </Wrap>
 
 
 
-        })}
+        ))}
 
       </Masonry>
+      <ButtonWrapper>
+        <SocialLink href="https://www.facebook.com/sarah.talley.39" target="_blank" rel="noopener noreferrer">View More Posts</SocialLink>
+      </ButtonWrapper>
       </Facebook>
       <Press />
       <Contact />
@@ -87,6 +92,24 @@ const Main = styled.main`
 const Facebook = styled.main`
     width: 90%;
     margin: 4em auto 0 auto;
+`
+const SocialLink = styled.a`
+  color: white;
+  background: #0F5800;
+  font-family: 'Brandon Grotesque Regular';
+  font-size: 18px;
+  padding: 1em 2em;
+  display: inline-block;
+  transition: ease .2s;
+  text-decoration: none;
+  &:hover {
+    background: #0F5400;
+    cursor: pointer;
+  }
+`
+const ButtonWrapper = styled.div`
+  margin: 0 auto;
+  display: table;
 `
 const Wrap = styled.div`
     border: 1px solid #C4C4C4;
@@ -125,10 +148,8 @@ const Profile = styled.div`
     width: 3em;
     height: 3em;
     background: black;
-    border-radius: 1.5em;
-    border: 1px #545454 solid;
     background-image: url(${props => props.profilePic});
-    background-size: cover;
+    background-size: cont;
     background-position: 50% 50%;
 `
 const FacebookLink = styled.a`
@@ -161,23 +182,19 @@ export const query = graphql`
         url
       }
     }
-    allFacebookPosts (sort: {fields: created_time, order: DESC}, limit: 9) {
+    allFacebookPosts (sort: {fields: created_time, order: DESC}) {
       edges {
         node {
           id
           message
-          created_time(formatString: "MMM DD YYYY")
+          created_time(formatString: "ll")
           permalink_url
           attachments {
             data {
-              url
               type
-              title
               media {
                 image {
-                  height
                   src
-                  width
                 }
               }
             }
