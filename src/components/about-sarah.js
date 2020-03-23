@@ -4,6 +4,7 @@ import styled from "styled-components";
 import H2 from "../components/typography/h2"
 import H3 from "../components/typography/h3"
 import P from "../components/typography/p"
+import Social from "../components/social-button"
 import Container from "../components/container"
 import { StaticQuery, graphql } from 'gatsby'
 import Img from "gatsby-image/withIEPolyfill"
@@ -20,13 +21,26 @@ export default () => (
                     }
                 }
             }
-            
+            vine: file(relativePath: { eq: "corner-vine.png" }) {
+                childImageSharp {
+                    # Specify the image processing specifications right in the query.
+                    # Makes it trivial to update as your page's design changes.
+                    fixed(width: 100, height: 100) {
+                      ...GatsbyImageSharpFixed
+                    }
+                }
+            }
         }
       `}
       render={data => (
         <section>
             <Container>
                 <Content>
+                <Img
+                    fixed={data.vine.childImageSharp.fixed}
+                    alt='The Growing Season by Sarah Frey'
+                    style={{ position: "absolute", right: "0", top: "0", transform: "rotate(270deg)" }}
+                />
                     <Flexitem>
                     <Img
                         fluid={data.sarah.childImageSharp.fluid}
@@ -41,7 +55,8 @@ export default () => (
                         <Copy>
                             <H3>ABOUT THE AUTHOR</H3>
                             <H2>Meet Sarah</H2>
-                            <P>Sarah Frey is the Founding Farmer of Frey Farms, a major produce and beverage provider with operations in seven states. The fast-growing company supplies fresh produce and beverages to retailers nationwide, and has undertaken a mission to eliminate food waste by using unused fruit to create a line of healthy fruit juices and produce marketed under the company’s Sarah’s Homegrown brand. Frey’s ability to negotiate has been featured in a Harvard Business School case study. Frey Farms is based in Orchardville, Ill., the town where Frey grew up and launched her business.</P>
+                            <Social/>
+                            <P>Sarah Frey has been described by the New York Times as “the Pumpkin Queen of America”. She sells more pumpkins than any other producer in the United States. Her family business, Frey Farms, plants thousands of acres of fruits and vegetables in Florida, Georgia, Missouri, Arkansas, Illinois, Indiana, and West Virginia. With a mission to end food waste in the fresh produce industry, the family makes natural food products and beverages from imperfect or “ugly fruit”.  Inspired by her humble beginnings and early life on the farm, she continues to create opportunities for those living and working in rural communities. Frey lives in Southern Illinois and is raising her two sons, William and Luke, on the same family farm where she grew up..</P>
                         </Copy>
                     </Flexitem>
 
@@ -55,14 +70,15 @@ export default () => (
 
 const Content = styled.div`
     background: #F7FCF9;
-    margin: 8em 0 4em  0;
-    @media (min-width: 800px) {
+    margin: 4em 0 4em  0;
+    position: relative;
+    @media (min-width: 1200px) {
         display: flex;
         align-items: stretch;
     }
 `
 const Flexitem = styled.div`
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
         width: 50%;
     }
 `

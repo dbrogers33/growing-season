@@ -26,6 +26,12 @@ const globalStyles = createGlobalStyle`
         url("/fonts/CervoNeue-BoldNeue.woff") format("woff");
   }
 
+  @font-face {
+    font-family: "Handelson";
+    src: url("/fonts/Handelson-Three.woff2") format("woff2"),
+        url("/fonts/Handelson-Three.woff") format("woff");
+  }
+
   `
 
 export default globalStyles

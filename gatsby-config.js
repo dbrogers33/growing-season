@@ -1,3 +1,22 @@
+const fbQuery = `
+picture {
+  url
+},
+posts {
+  message,
+  created_time,
+  id,
+  permalink_url,
+  attachments {
+    type,
+    media {
+      image {
+        src
+      }
+    }
+  }
+}`
+
 module.exports = {
   siteMetadata: {
     title: `The Growing Season by Sarah Frey`,
@@ -14,15 +33,16 @@ module.exports = {
           // Add any options here
         },
     },
-    // {
-    //   resolve: "gatsby-plugin-web-font-loader",
-    //       options: {
-    //         custom: {
-    //           families: ["Brandon Grotesque, Cervo Neue"],
-    //           urls: ["/fonts/fonts.css"],
-    //         },
-    //       },
-    // },
+    {
+      resolve: `gatsby-source-facebook`,
+      options: {
+        places: [`me`],
+        params: {
+          fields: fbQuery,
+        },
+        key: `EAAYivF1CuzcBAB4soGHjolmzHHXnMVV0Nyq7z2CutDUzIEAFygwsZBUHL9cQPawiqbGxYrYmPMzvqY2AGlHHHgRDmFhcBZCYdZBjQdjafHYDkPkJHldzuCm317ZBMGZAlup7T2pLzjXuZA4ziAhAUMBbfNcXrg8sVzuddG7G10AAZDZD`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

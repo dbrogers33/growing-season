@@ -71,13 +71,15 @@ export default () => (
                     </a>
                 </Flexitem>
                 <Flexitem>
-                    <Img
-                        fluid={data.walmart.childImageSharp.fluid}
-                        objectFit='cover'
-                        objectPosition='50% 50%'
-                        alt='Pre order The Growing Season at Walmart'
-                        style={{ width: "100%" }}
-                    />
+                    <a href="https://www.walmart.com/ip/The-Growing-Season-How-I-Saved-an-American-Farm-and-Built-a-New-Life-9780593129395/375289573" target="_blank" rel="noopener noreferrer">
+                        <Img
+                            fluid={data.walmart.childImageSharp.fluid}
+                            objectFit='cover'
+                            objectPosition='50% 50%'
+                            alt='Pre order The Growing Season at Walmart'
+                            style={{ width: "100%" }}
+                        />
+                    </a>
                 </Flexitem>
                 <Flexitem>
                     <a href="https://www.penguinrandomhouse.com/books/610559/the-growing-season-by-sarah-frey/" target="_blank" rel="noopener noreferrer">
@@ -104,11 +106,11 @@ export default () => (
   )
 
 const Wrap = styled.section`
-    padding: 3em 0;
+    padding: 2em 0;
     background: #F7FCF9;
 `
 const Flexbox = styled.div`
-    padding: 1em 0;
+    padding: 0em 0;
 `
 
 const Flexitem = styled.div`
@@ -120,6 +122,6 @@ const Flexitem = styled.div`
     padding: 1em;
     @media (min-width: 800px) {
         width: calc(25% - 4em);
-        padding: 2em;
+        padding: 1em 2em;
     }
 `

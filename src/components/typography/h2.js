@@ -25,7 +25,7 @@ const H2 = styled.h2`
     font-size: 24px;
     text-align: ${props => props.textAlign};
     margin: .1em 0;
-    @media (min-width: 800px) {
+    @media (min-width: 1400px) {
         font-size: 36px;
     }
 `
