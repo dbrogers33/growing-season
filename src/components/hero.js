@@ -16,14 +16,14 @@ export default () => (
         query {
             book: file(relativePath: { eq: "book.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1600) {
+                    fluid(maxWidth: 600) {
                     ...GatsbyImageSharpFluid
                     }
                 }
             }
             sarah: file(relativePath: { eq: "sarah-holding-pumpkin.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1600) {
+                    fluid(maxWidth: 750) {
                     ...GatsbyImageSharpFluid
                     }
                 }
