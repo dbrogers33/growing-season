@@ -6,7 +6,7 @@ import P from '../components/typography/p'
 const Container = ({ }) => {
     return (
         <div>
-            <Link href="https://www.instagram.com/sara__frey/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.instagram.com/sarahfrey___/" target="_blank" rel="noopener noreferrer">
                 <SocialButton>
                         <FaInstagram style={{ fontSize: "18px", color: "rgba(0, 0, 0, 0.55)" }}/>
                         <AccountName>@Sarah__Frey</AccountName>
