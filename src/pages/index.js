@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
       <Hero />
       <PreOrder />
       <AboutSarah />
-      <Reviews />
+      {/* <Reviews /> */}
       <Facebook>
       <Masonry>
 
