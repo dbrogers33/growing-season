@@ -40,7 +40,7 @@ module.exports = {
         params: {
           fields: fbQuery,
         },
-        key: `EAAYivF1CuzcBAB4soGHjolmzHHXnMVV0Nyq7z2CutDUzIEAFygwsZBUHL9cQPawiqbGxYrYmPMzvqY2AGlHHHgRDmFhcBZCYdZBjQdjafHYDkPkJHldzuCm317ZBMGZAlup7T2pLzjXuZA4ziAhAUMBbfNcXrg8sVzuddG7G10AAZDZD`,
+        key: `EAAYivF1CuzcBADaywDOLQ7ZAPyTzmT5AZAZAEMCvnGFldGyZCPzJLcZBx96dJGZBagaa7e5TFwaZAP2e1X9jama5x07a7ZCXmjZBghgOOv71wOjpsKCUjBMiTUvy4jgYvhPxUWQJb3ebHJLELPabeTBIi8wWARTUUOrEZD`,
       },
     },
     {
