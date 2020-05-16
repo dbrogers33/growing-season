@@ -41,7 +41,7 @@ export default () => (
                     alt='The Growing Season by Sarah Frey'
                     style={{ position: "absolute", right: "0", top: "0", transform: "rotate(270deg)" }}
                 />
-                    <Flexitem>
+                    {/* <Flexitem>
                     <Img
                         fluid={data.sarah.childImageSharp.fluid}
                         objectFit='cover'
@@ -49,7 +49,7 @@ export default () => (
                         alt='Sarah Frey Headshot - Frey Farms'
                         style={{ width: "100%", height: "100%" }}
                     />
-                    </Flexitem>
+                    </Flexitem> */}
 
                     <Flexitem>
                         <Copy>
@@ -79,7 +79,7 @@ const Content = styled.div`
 `
 const Flexitem = styled.div`
     @media (min-width: 1200px) {
-        width: 50%;
+        width: 100%;
     }
 `
 
