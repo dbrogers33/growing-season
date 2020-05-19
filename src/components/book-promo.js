@@ -19,9 +19,17 @@ export default () => (
                       }
                 }
             }
+            fruitbackground: file(relativePath: { eq: "fruit-bg.png" }) {
+                childImageSharp {
+                  fluid(maxWidth: 1500, quality: 100) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
         }
       `}
       render={data => (
+        <HeroWrapper>
         <Container>
             <Wrapper>
                 <FlexItem>
@@ -32,20 +40,34 @@ export default () => (
                 </FlexItem>
                 <FlexItem>
                     <Copy>
-                        <H3>Sarah's Book</H3>
-                        <H2>Sharing our love of the farm with you.</H2>
+                        <H3>The Store of The Growing Season</H3>
+                        <H2>How Sarah Frey Saved an American Farm</H2>
                         <P>The youngest of 21 children, Sarah Frey grew up on astruggling farm in Southern Illinois. At 15, she started her own fresh produce delivery business out of an old pickup truck. Two years later she took over the family farm and started doing business with the largest grocery retailers in the country. Frey’s story is one of never giving up, negotiating with some of the biggest businesses in the nation and building a company which serves consumers with fresh, healthy products. Frey Farms is the nation’s leading producer of pumpkins,earning Frey the nickname “America’s Pumpkin Queen.”</P>
                     </Copy>
                 </FlexItem>
                
             </Wrapper>
+            
         </Container>
+            <BackgroundImage
+                fluid={data.fruitbackground.childImageSharp.fluid}
+                objectPosition='50% 50%'
+                style={{ position: "absolute" }}
+            />
 
+        </HeroWrapper>
       )}
     />
   )
 
-
+  const HeroWrapper = styled.div`
+  position: relative;
+  @media (min-width: 900px) {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+  }
+`
 const Wrapper = styled.div`
     position: relative;
     margin: 4em 0;
@@ -71,4 +93,10 @@ const FlexItem = styled.div`
         width: calc(100% / 2);
     }
 `
-
+const BackgroundImage = styled(Img)`
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+`
