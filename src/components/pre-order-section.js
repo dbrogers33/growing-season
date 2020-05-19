@@ -107,7 +107,6 @@ export default () => (
 
 const Wrap = styled.section`
     padding: 2em 0;
-    background: #F7FCF9;
 `
 const Flexbox = styled.div`
     padding: 0em 0;

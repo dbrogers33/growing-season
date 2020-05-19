@@ -53,10 +53,14 @@ export default () => (
 
                     <Flexitem>
                         <Copy>
-                            <H3>ABOUT THE AUTHOR</H3>
+                            <H3>About the Author</H3>
                             <H2>Meet Sarah</H2>
                             <Social/>
-                            <P>Sarah Frey has been described by the New York Times as “the Pumpkin Queen of America”. She sells more pumpkins than any other producer in the United States. Her family business, Frey Farms, plants thousands of acres of fruits and vegetables in Florida, Georgia, Missouri, Arkansas, Illinois, Indiana, and West Virginia. With a mission to end food waste in the fresh produce industry, the family makes natural food products and beverages from imperfect or “ugly fruit”.  Inspired by her humble beginnings and early life on the farm, she continues to create opportunities for those living and working in rural communities. Frey lives in Southern Illinois and is raising her two sons, William and Luke, on the same family farm where she grew up.</P>
+                            <P>The youngest of 21 children, Sarah Frey grew up on a struggling farm in Southern Illinois. At 16, she started her own fresh produce delivery business out of an old pickup truck. Two years later she took over the family farm and started doing business with the largest grocery retailers in the country.</P>
+
+                            <P>Frey’s story is one of never giving up, negotiating with some of the biggest businesses in the nation and building a company which serves consumers with fresh, healthy products.</P>
+
+                            <P>Frey Farms is the nation’s leading producer of pumpkins,earning Frey the nickname “America’s Pumpkin Queen.”</P>
                         </Copy>
                     </Flexitem>
 
