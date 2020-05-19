@@ -42,7 +42,7 @@ export default () => (
                 </FlexItem>
                 <FlexItem>
                     <Copy>
-                        <H3>The Store of The Growing Season</H3>
+                        <H3>The Story of The Growing Season</H3>
                         <H2>How Sarah Frey Saved an American Farm</H2>
                         <P>The youngest of 21 children, Sarah Frey grew up on astruggling farm in Southern Illinois. At 15, she started her own fresh produce delivery business out of an old pickup truck. Two years later she took over the family farm and started doing business with the largest grocery retailers in the country. Frey’s story is one of never giving up, negotiating with some of the biggest businesses in the nation and building a company which serves consumers with fresh, healthy products. Frey Farms is the nation’s leading producer of pumpkins,earning Frey the nickname “America’s Pumpkin Queen.”</P>
                     </Copy>
