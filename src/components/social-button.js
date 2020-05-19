@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from "styled-components";
 import { FaInstagram, FaFacebookF } from 'react-icons/fa';
-import P from '../components/typography/p'
 
-const Container = ({ }) => {
+const Container = () => {
     return (
         <div>
             <Link href="https://www.instagram.com/sarahfrey___/" target="_blank" rel="noopener noreferrer">

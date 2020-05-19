@@ -9,8 +9,8 @@ import PreOrder from "../components/pre-order-section"
 import AboutSarah from "../components/about-sarah"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
-import Reviews from "../components/reviews"
-import H3 from "../components/typography/h3"
+// import Reviews from "../components/reviews"
+// import H3 from "../components/typography/h3"
 import Masonry from 'react-masonry-component';
 import styled from "styled-components";
 
@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
                 <Grid>
                   <Profile profilePic={data.facebookPicture.data.url}></Profile>
                   <div>
-                    <H3>Sarah Frey</H3>
+                    <SocialTitle>Sarah Frey</SocialTitle>
                     <Time>{post.created_time}</Time>
                   </div>
                 </Grid>
@@ -86,6 +86,17 @@ const IndexPage = ({ data }) => {
   )
 }
 
+
+const SocialTitle = styled.h3`
+    text-transform: uppercase;
+    font-family: 'Cervo Neue';
+    color: #0F5800;
+    font-size: 18px;
+    margin: .1em 0 .5em 0;
+    @media (min-width: 800px) {
+        font-size: 18px;
+    }
+`
 const Main = styled.main`
   margin-top: 0em;
 `

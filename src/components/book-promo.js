@@ -33,10 +33,12 @@ export default () => (
         <Container>
             <Wrapper>
                 <FlexItem>
+                <a href="#prepurhcase">
                 <Image
                     fluid={data.background.childImageSharp.fluid}
                     alt="Cover of The Growing Season by Sarah Frey"
                 />
+                </a>
                 </FlexItem>
                 <FlexItem>
                     <Copy>
@@ -49,6 +51,7 @@ export default () => (
             </Wrapper>
             
         </Container>
+        
             <BackgroundImage
                 fluid={data.fruitbackground.childImageSharp.fluid}
                 objectPosition='50% 50%'
