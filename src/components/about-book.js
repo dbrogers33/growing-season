@@ -35,7 +35,7 @@ export default () => (
                     </P>
 
                     <P>
-                    Frey Farms sells more pumpkins than any other producer in the nation, earning Frey the nickname “America’s Pumpkin Queen.” 
+                      <a href="https://freyfarms.com">Frey Farms</a> sells more pumpkins than any other producer in the nation, earning Frey the nickname “America’s Pumpkin Queen.” 
                     </P>
 
                     <P>

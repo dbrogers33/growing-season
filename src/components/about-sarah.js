@@ -60,7 +60,7 @@ export default () => (
 
                             <P>Frey’s story is one of never giving up, negotiating with some of the biggest businesses in the nation and building a company which serves consumers with fresh, healthy products.</P>
 
-                            <P>Frey Farms is the nation’s leading producer of pumpkins,earning Frey the nickname “America’s Pumpkin Queen.”</P>
+                            <P><a href="https://freyfarms.com">Frey Farms</a> is the nation’s leading producer of pumpkins,earning Frey the nickname “America’s Pumpkin Queen.”</P>
                         </Copy>
                     </Flexitem>
 

@@ -37,6 +37,14 @@ const globalStyles = createGlobalStyle`
         font-display: fallback;
   }
 
+  a {
+    color: #0F5800;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   `
 
 export default globalStyles
