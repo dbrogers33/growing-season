@@ -56,11 +56,11 @@ export default () => (
                             <H3>About the Author</H3>
                             <H2>Meet Sarah</H2>
                             <Social/>
-                            <P>The youngest of 21 children, Sarah Frey grew up on a struggling farm in Southern Illinois. At 16, she started her own fresh produce delivery business out of an old pickup truck. Two years later she took over the family farm and started doing business with the largest grocery retailers in the country.</P>
+                            <P>The youngest of 21 children, Sarah Frey grew up on a struggling farm in Southern Illinois. At 15, she started her own fresh produce delivery business out of an old pickup truck. Two years later she took over the family farm and started doing business with the largest grocery retailers in the country.</P>
 
                             <P>Frey’s story is one of never giving up, negotiating with some of the biggest businesses in the nation and building a company which serves consumers with fresh, healthy products.</P>
 
-                            <P><a href="https://freyfarms.com">Frey Farms</a> is the nation’s leading producer of pumpkins,earning Frey the nickname “America’s Pumpkin Queen.”</P>
+                            <P><a href="https://freyfarms.com">Frey Farms</a> is the nation’s leading producer of pumpkins, earning Frey the nickname “America’s Pumpkin Queen.”</P>
                         </Copy>
                     </Flexitem>
 
