@@ -44,7 +44,7 @@ export default () => (
       render={data => (
         <Wrap id="prepurhcase">
         <Container>
-            <H2 textAlign="center">PRE-ORDER YOUR COPY AT...</H2>
+            <H2 textAlign="center">FIND A COPY AT...</H2>
             
             <Flexbox>
                 
