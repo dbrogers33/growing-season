@@ -2,7 +2,7 @@ const fbQuery = `
 picture {
   url
 },
-posts {
+post {
   message,
   created_time,
   id,

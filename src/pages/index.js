@@ -19,11 +19,11 @@ import 'normalize.css'
 import GlobalStyle from '../components/global-styles'
 
 const IndexPage = ({ data }) => {
-  const posts = data.allFacebookPosts.edges
-    .map(edge => edge.node)
-    .filter(post => post.message)
-    .filter(post => post.attachments.data[0].type === 'photo')
-    .slice(0, 9)
+  // const posts = data.allFacebookPosts.edges
+  //   .map(edge => edge.node)
+  //   .filter(post => post.message)
+  //   .filter(post => post.attachments.data[0].type === 'photo')
+  //   .slice(0, 9)
   return (
 
     <Main>
@@ -33,7 +33,7 @@ const IndexPage = ({ data }) => {
       <PreOrder />
       <AboutSarah />
       {/* <Reviews /> */}
-      <Facebook>
+      {/* <Facebook>
       <Masonry>
 
 
@@ -77,7 +77,7 @@ const IndexPage = ({ data }) => {
       <ButtonWrapper>
         <SocialLink href="https://www.facebook.com/sarah.talley.39" target="_blank" rel="noopener noreferrer">View More Posts</SocialLink>
       </ButtonWrapper>
-      </Facebook>
+      </Facebook> */}
       <Press />
       <Contact />
       <Footer />
@@ -186,34 +186,34 @@ const Message = styled.p`
 `
 
 
-export const query = graphql`
-  query {
-    facebookPicture {
-      data {
-        url
-      }
-    }
-    allFacebookPosts (sort: {fields: created_time, order: DESC}) {
-      edges {
-        node {
-          id
-          message
-          created_time(formatString: "ll")
-          permalink_url
-          attachments {
-            data {
-              type
-              media {
-                image {
-                  src
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     facebookPicture {
+//       data {
+//         url
+//       }
+//     }
+//     allFacebookPosts (sort: {fields: created_time, order: DESC}) {
+//       edges {
+//         node {
+//           id
+//           message
+//           created_time(formatString: "ll")
+//           permalink_url
+//           attachments {
+//             data {
+//               type
+//               media {
+//                 image {
+//                   src
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default IndexPage
