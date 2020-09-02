@@ -12,10 +12,10 @@ export default () => (
     <StaticQuery
       query={graphql`
         query {
-            background: file(relativePath: { eq: "book-cover.png" }) {
+            book: file(relativePath: { eq: "book.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 700, quality: 100) {
-                        ...GatsbyImageSharpFluid_withWebp
+                    fluid(maxWidth: 700) {
+                        ...GatsbyImageSharpFluid
                       }
                 }
             }
@@ -35,7 +35,7 @@ export default () => (
                 <FlexItem>
                 <a href="#prepurhcase">
                 <Image
-                    fluid={data.background.childImageSharp.fluid}
+                    fluid={data.book.childImageSharp.fluid}
                     alt="Cover of The Growing Season by Sarah Frey"
                 />
                 </a>
