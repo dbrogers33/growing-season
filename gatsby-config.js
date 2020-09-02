@@ -33,16 +33,16 @@ module.exports = {
           // Add any options here
         },
     },
-    {
-      resolve: `gatsby-source-facebook`,
-      options: {
-        places: [`me`],
-        params: {
-          fields: fbQuery,
-        },
-        key: `EAAYivF1CuzcBALsVBdg6yuJQQpMybTWWmtWzJp2Y5JGVyQHBJlZA1KP0HEf6AWLxHL0K9pUI111HjFGdmfL79DuZBFTk9ER6xW7LTm8UM67hKmXRtQZB1q1Gl8MQ0wnhOI4s2g3kEWFIKxk88YAZCWo7pZBBp5u2eDIY1Aqx5HAZDZD`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-facebook`,
+    //   options: {
+    //     places: [`me`],
+    //     params: {
+    //       fields: fbQuery,
+    //     },
+    //     key: `EAAYivF1CuzcBADEWSp4EQWhfZBqBdw4gI996RF9bo5757aoHX0zBM5IrrQ0C8JZCVIROrndO8ywRZC74lmY0frNBFVr1KfIPyckWEebG0m4KZCk9wWaXSYSZBhdh2ao7SjFzUe8eBzwXgW3Bbgnu36B5b6FtGjT4mUix7j3qkwgZDZD`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
