@@ -5,14 +5,14 @@ import { FaInstagram, FaFacebookF } from 'react-icons/fa';
 const Container = () => {
     return (
         <div>
-            <Link href="https://www.instagram.com/sarahfrey___/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.instagram.com/sarahfrey/" target="_blank" rel="noopener noreferrer">
                 <SocialButton>
                         <FaInstagram style={{ fontSize: "18px", color: "rgba(0, 0, 0, 0.55)" }}/>
-                        <AccountName>@Sarah__Frey</AccountName>
+                        <AccountName>@SarahFrey</AccountName>
                 </SocialButton>
             </Link>
 
-            <Link href="https://www.facebook.com/sarah.talley.39" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com/SarahFreyOfficial" target="_blank" rel="noopener noreferrer">
                 <SocialButton>
                         <FaFacebookF style={{ fontSize: "18px", color: "rgba(0, 0, 0, 0.55)"}}/>
                         <AccountName>@SarahFrey</AccountName>
