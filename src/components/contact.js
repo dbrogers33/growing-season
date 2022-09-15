@@ -26,13 +26,10 @@ export default () => (
             <Border>
                 <Content>
                     <H3 textAlign="center">Press and Media</H3>
-                    <Text textAlign="center">To send Sarah Frey a message:</Text>
-                    <Text textAlign="center"><a href="mailto:sarah@sarahfrey.com">sarah@sarahfrey.com</a></Text>
-                    <br />
                     <Text textAlign="center">For media inquires and permissions:</Text>
-                    <Name textAlign="center">Sarah Breivogel</Name>
-                    <Text textAlign="center">(212) 572-2722</Text>
-                    <Text textAlign="center"><a href="mailto:sbreivogel@peguinrandomhouse.com">sbreivogel@peguinrandomhouse.com</a></Text>
+                    <Name textAlign="center">Lisa Proctor</Name>
+                    <Text textAlign="center">(615) 477-5066</Text>
+                    <Text textAlign="center"><a href="mailto:lisaproctor@freyfarms.com">lisaproctor@freyfarms.com</a></Text>
                 </Content>
                
                 <Img
